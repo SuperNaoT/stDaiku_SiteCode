@@ -1,17 +1,20 @@
 Microsoft Windows [Version 10.0.19045.3324]
 (c) Microsoft Corporation. All rights reserved.
 
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>git init
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>git init
 Initialized empty Git repository in D:/Documents/01_StudyWEB/00)_WaPlus/wordpress/.git/
 
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>git add .
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>git add .
 
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>git commit -v
-■ 2023年08月23日　GitHub管理開始・初登録
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>git commit -v
+■ 2023年08月24日　GitHub管理開始・初登録　【stDaiku.co.jp】
+
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Thu Aug 24 13:11:03 2023 +0900
 #
 # On branch master
 #
@@ -20,9 +23,8 @@ D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>git commit -v
 # Changes to be committed:
 #	new file:   .gitignore
 #	new file:   .htaccess
-#	new file:   "20230822_GitHub\346\233\264\346\226\260\345\261\245\346\255\264.txt"
-#	new file:   license.txt
-#	new file:   waplus-wordpress.code-workspace
+#	new file:   "20230824_GitHub\346\233\264\346\226\260\346\211\213\347\266\232\343\201\215\345\261\245\346\255\264.txt"
+#	new file:   st-daikuDev.code-workspace
 #	new file:   wp-config.php
 #	new file:   wp-content/index.php
 #	new file:   wp-content/plugins/waPlus-plugin_forWidget/assets/scss/com/_breakpoints.scss
@@ -43,453 +45,478 @@ D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>git commit -v
 #	new file:   wp-content/plugins/waPlus-plugin_forWidget/assets/scss/widgets/css/postListWithThumb.min.css.map
 #	new file:   wp-content/plugins/waPlus-plugin_forWidget/assets/scss/widgets/postListWithThumb/postListWithThumb.scss
 #	new file:   wp-content/plugins/waPlus-plugin_forWidget/my-plugin_forWidget.php
-#	new file:   wp-content/themes/waplus-child/functions.php
-#	new file:   wp-content/themes/waplus-child/screenshot.png
-#	new file:   wp-content/themes/waplus-child/style.css
-#	new file:   wp-content/themes/waplus/.htaccessNoUse
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/AC_LOGO-WGWD.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/AC_LOGO.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/ACestus-500x350.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/ACestus-500x350Px.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/ACestus-BankokS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/ACestus-CrocoShineBlackSknS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/ACestus-bangkok1.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/ACestus-bangkok1M.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/ACestus-bangkok1Px.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/ACestus1-500x350.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/FixedP_CrocoCrown_C800-520.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/FixedP_CrocoFrSkin_C800-520.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/ACestus-Bankok.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/ACestus-bangkok1.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1075.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1079.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1083.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1088.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1093.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1108.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1109.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1112.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1116.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1124.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1136.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1143.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1148.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1177.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1180.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1185.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1187.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1191.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1194.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1204.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ACestus/NoUse_gallery/IMG_1215.webp
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/DSC_Ohtemachi.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/DSC_OhtemachiS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (1).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (10).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (11).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (12).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (13).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (2).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (3).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (4).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (5).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (6).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (7).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (8).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/00_yarnKnitting/yarnK (9).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (1).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (10).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (11).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (12).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (13).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (14).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (2).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (3).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (4).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (5).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (6).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (7).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (8).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/01_laceKnitting/laceK (9).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (1).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (10).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (11).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (12).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (13).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (14).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (15).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (16).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (2).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (3).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (4).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (5).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (6).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (7).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (8).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/00_iNekka/02_sashiko/sashikoK (9).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (1).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (10).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (11).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (12).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (13).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (14).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (15).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (16).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (17).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (18).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (19).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (2).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (20).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (21).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (22).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (23).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (3).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (4).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (5).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (6).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (7).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (8).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/Gallery/01_ACestus/00_BangKok/bangKok (9).jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/api-image.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/binary-question.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/company_1280-1280.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/macOnDesk.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/macOnDeskPx.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/macOnDeskS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/myDeskTop.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/nodeProject.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/nodeProjectS.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/programmingLogo.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/programmingLogoS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/sourceCode.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/ITWebSol/sourceCodeS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/SunShine.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/SunShineS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/SunShineW.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/WaPlus-Logo.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/WaPlus-LogoName - Large.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/WaPlus-LogoName.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/bgImage_SakuraS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/consulting_1920-1280.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/favicon.ico
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/creemaMinne_Images/InstagramGlyph.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/creemaMinne_Images/TwitterSocialIcons-square-blue.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/creemaMinne_Images/bgImage_1750.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/creemaMinne_Images/favicon.ico
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/creemaMinne_Images/i-nekka_Edwardian_01.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/creemaMinne_Images/i-nekka_Edwardian_02.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/i-nekka-roses.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/i-nekka-rosesPx.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/i-nekka_Edwardian_1024.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/inekka-laceS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/inekka-nitS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/inekka-sskS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/products/i-nekka_Edwardian_02.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/products/i-nekka_Edwardian_1024.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/products/inekka_lace1S.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/products/inekka_nitWreathS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/products/inekka_ssk4BagS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/i-nekka/products/inekka_summerNitS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/light_1357-1920.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/loadBGImage.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/loadBGImage_780.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/loadBGImage_MB.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/loadBGImage_MBs.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/mailMan_2500-1920.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/A-PopAdvS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/JGBBFieldS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/JGBaseballPark.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/SNS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/ScheduleS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/TogetherS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/basketballParkS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/ichoFestivalNgtS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/ichoFestivalS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/management/kitchenCarS.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/blogImage.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/blogImage.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/blogImageMB.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/company_1280-1280.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/company_900-1280MB.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/newsImage.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/newsImageMB.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/newsImageMB.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/rescue_1980-1319.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/newsBlog/rescue_1980-1521.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/Images/privacy-policy.jpg
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/clearEnvStyle.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/clearEnvStyle.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/hbgMenu.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/hbgMenu.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_breakpoints.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_footerStyle.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_forDEBUG.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_headerStyle.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_mainUtility.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_mixinDefine.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_rellax.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_sideScrollStyle.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_styleCommon.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_styleGallery.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/_valuablesDefine.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/_categoryPagination.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/_forSingle.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/forWordPressEditor.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/forWordPressEditor.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/forWordPressEditor.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/forWordPressEditor.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/forWordPressEditor.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/common-style/archive/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/_00_mainBody.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/_01_pageTopSection.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/_02_ourServicesSection.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/_03_ourPfmMBStyle.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/_03_ourPfmStyle.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/_04_ourInformations.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/00_index/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/01_philo/_philoPage.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/01_philo/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/01_philo/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/01_philo/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/01_philo/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/01_philo/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/02_mngSup/_mngSupPage.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/02_mngSup/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/02_mngSup/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/02_mngSup/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/02_mngSup/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/02_mngSup/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/03_itWebS/_ITWebSolEng.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/03_itWebS/_ITWebSolPage.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/03_itWebS/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/03_itWebS/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/03_itWebS/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/03_itWebS/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/03_itWebS/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/04_orGods/_orgPrdSales.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/04_orGods/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/04_orGods/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/04_orGods/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/04_orGods/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/04_orGods/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/05_iNekka/_iNekka.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/05_iNekka/_iNekkaOLShop.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/05_iNekka/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/05_iNekka/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/05_iNekka/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/05_iNekka/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/05_iNekka/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/06_ACestus/_ACestus.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/06_ACestus/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/06_ACestus/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/06_ACestus/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/06_ACestus/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/06_ACestus/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/07_08_category/_allCategory.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/07_08_category/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/07_08_category/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/07_08_category/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/07_08_category/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/07_08_category/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/09_comProf/_companyProfile.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/09_comProf/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/09_comProf/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/09_comProf/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/09_comProf/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/09_comProf/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/10_pPolicy/_privacyPolicy.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/10_pPolicy/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/10_pPolicy/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/10_pPolicy/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/10_pPolicy/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/10_pPolicy/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/11_contactF/_contactForm.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/11_contactF/_mixinForContactForm.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/11_contactF/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/11_contactF/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/11_contactF/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/11_contactF/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/11_contactF/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_07_news/_newsCategory.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_07_news/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_07_news/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_07_news/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_07_news/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_07_news/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_08_blog/_blogCategory.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_08_blog/style.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_08_blog/style.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_08_blog/style.min.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_08_blog/style.min.css.map
-#	new file:   wp-content/themes/waplus/WaPlusCfg/assets/scss/contents/NoUse_08_blog/style.scss
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/Mobile_Check.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/Mobile_Detect.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/_DEBUG-Setting.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/categoryUtility/IndicateCategoryArchivePAGE.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/categoryUtility/categoryPaginationCtr.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/categoryUtility/indicateOnePostPAGE.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/categoryUtility/indicateOnePostTILE.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/comFooter.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/comHeader.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/globalVariables.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/globalVariablesDef.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/loadScreen.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/myJavaScript.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/myStyleSheet.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/screenSize_get.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/screenSize_out.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/seo_structureData.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/common-php/setPageKinds.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index/01_pageTopSection.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index/02_ourServicesSection.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index/03-01_managmentSupport.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index/03-02_itWebSolution.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index/03-03_i-nekka.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index/03-04_ACestus.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index/04_ourInformations.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index_LazyLoad_with_BUG/01_pageTopSection.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index_LazyLoad_with_BUG/02_ourServicesSection.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index_LazyLoad_with_BUG/03-01_managmentSupport.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index_LazyLoad_with_BUG/03-02_itWebSolution.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index_LazyLoad_with_BUG/03-03_i-nekka.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index_LazyLoad_with_BUG/03-04_ACestus.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/00_index_LazyLoad_with_BUG/04_ourInformations.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/contactFormCtr/inputDataConf.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/contactFormCtr/inputDataEdit.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/contactFormCtr/inputDataSend.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/contactFormCtr/sendAddress.txt
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/contactFormCtr/sendAddressSTD.txt
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/gallery/galleryImgDef-ACestus.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/gallery/galleryImgDef-iNekka.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/gallery/subPage-galleryControl with Comment.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/gallery/subPage-galleryControl.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/iNekkaEC/iNekkaECM.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/iNekkaEC/iNekkaECP.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-01.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-02.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-03.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-03E.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-04.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-05.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-05EC.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-06.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-07_NoUse.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-08_NoUse.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-09.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-10.php
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/01_subPages/subPage-11.php
-#	new file:   "wp-content/themes/waplus/WaPlusCfg/contents/news-blog-\346\212\225\347\250\277\347\224\250\343\203\226\343\203\255\343\203\203\343\202\257.json"
-#	new file:   wp-content/themes/waplus/WaPlusCfg/contents/sendAddress.txt
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/breakPointsSetByWindowSize.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/breakPointsSetByWindowSize.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/hbgMenu.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/hbgMenu.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/headerDspGSAPCtr.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/headerDspGSAPCtr.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/imgGallary.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/imgGallary.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/subMenusCtr.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/com/subMenusCtr.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/01_philo/philo.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/01_philo/philo.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/02_mngSup/mngSup.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/02_mngSup/mngSup.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/03_itWebS/ITWebSol.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/03_itWebS/ITWebSol.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/03_itWebS/ITWebSolEng.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/03_itWebS/ITWebSolEng.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/04_orGods/orgPrdSales.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/04_orGods/orgPrdSales.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/05_iNekka/iNekka.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/05_iNekka/iNekka.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/05_iNekka/iNekkaOLShop.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/05_iNekka/iNekkaOLShop.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/06_ACestus/ACestus.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/06_ACestus/ACestus.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/07_08_newsBlog/categoryPageCtr.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/07_08_newsBlog/categoryPageCtr.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/09_comProf/companyProfile.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/09_comProf/companyProfile.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/10_pPolicy/privacyPolicy.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/10_pPolicy/privacyPolicy.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/autoKanajQ.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/autoKanajQ.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/contactForm BkUp20221222.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/contactForm.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/contactForm.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/contactFormGSAPDspCtr.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/contactFormGSAPDspCtr.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/jquery.autoKana.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/11_contactF/jquery.autoKana.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/front-page/jQ_scrollSpeedCtr.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/front-page/jQ_scrollSpeedCtr.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/front-page/jquery.easeScroll.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/front-page/main.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/front-page/main.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/front-page/sideScrollScript.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/front-page/sideScrollScript.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/singleArchive/jquery.archiveList.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/singleArchive/jquery.archiveList.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/singleArchive/js_scrollBarCtl.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/singleArchive/js_scrollBarCtl.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/singleArchive/singlePageCtr.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/js/contents/singleArchive/singlePageCtr.min.js
-#	new file:   wp-content/themes/waplus/WaPlusCfg/w3cValidation/images/favicon.ico
-#	new file:   wp-content/themes/waplus/WaPlusCfg/w3cValidation/images/vcss-blue.gif
-#	new file:   wp-content/themes/waplus/WaPlusCfg/w3cValidation/images/vcss.gif
-#	new file:   wp-content/themes/waplus/WaPlusCfg/w3cValidation/images/w3c.png
-#	new file:   wp-content/themes/waplus/WaPlusCfg/w3cValidation/style/base.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/w3cValidation/style/results.css
-#	new file:   wp-content/themes/waplus/WaPlusCfg/w3cValidation/w3cValidate withWarning.html
-#	new file:   wp-content/themes/waplus/WaPlusCfg/w3cValidation/w3cValidate.html
-#	new file:   wp-content/themes/waplus/archive.php
-#	new file:   wp-content/themes/waplus/category.php
-#	new file:   wp-content/themes/waplus/footer.php
-#	new file:   wp-content/themes/waplus/front-page.php
-#	new file:   wp-content/themes/waplus/functions.php
-#	new file:   wp-content/themes/waplus/header.php
-#	new file:   wp-content/themes/waplus/index.php
-#	new file:   "wp-content/themes/waplus/news-blog-\346\212\225\347\250\277\347\224\250\343\203\226\343\203\255\343\203\203\343\202\257.json"
-#	new file:   "wp-content/themes/waplus/news-blog-\346\212\225\347\250\277\350\200\205\347\224\250\343\203\226\343\203\255\343\203\203\343\202\257.json"
-#	new file:   wp-content/themes/waplus/page-01.php
-#	new file:   wp-content/themes/waplus/page-02.php
-#	new file:   wp-content/themes/waplus/page-03.php
-#	new file:   wp-content/themes/waplus/page-03E.php
-#	new file:   wp-content/themes/waplus/page-04.php
-#	new file:   wp-content/themes/waplus/page-05.php
-#	new file:   wp-content/themes/waplus/page-05EC.php
-#	new file:   wp-content/themes/waplus/page-06.php
-#	new file:   wp-content/themes/waplus/page-07_NoUse.php
-#	new file:   wp-content/themes/waplus/page-08_NoUse.php
-#	new file:   wp-content/themes/waplus/page-09.php
-#	new file:   wp-content/themes/waplus/page-10.php
-#	new file:   wp-content/themes/waplus/page-11.php
-#	new file:   wp-content/themes/waplus/page.php
-#	new file:   wp-content/themes/waplus/screenshot.png
-#	new file:   wp-content/themes/waplus/sidebar.php
-#	new file:   wp-content/themes/waplus/single.php
-#	new file:   wp-content/themes/waplus/style.css
+#	new file:   wp-content/themes/saitohCon-child/functions.php
+#	new file:   wp-content/themes/saitohCon-child/screenshot.jpg
+#	new file:   wp-content/themes/saitohCon-child/style.css
+#	new file:   wp-content/themes/saitohCon/.htaccess
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/chkHomeIns.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/earthquake-2_1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/earthquake-2_500-1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/earthquake-2_763-1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/health_1280-1280.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/health_1280-1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/health_500-1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/homeIns_1920-1079.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/homeIns_280-1080.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/homeIns_420-1080.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkHomeIns/love_1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkNewBuild/bluePrint_280-1080.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkNewBuild/bluePrint_420-1080.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkNewBuild/buildHome_1080-1080.png
+#	new file:   wp-content/themes/saitohCon/Images/ChkNewBuild/buildHome_281-1079.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkNewBuild/forestLeaves.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkNewBuild/trees-gda7a19bb0_1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkNewBuild/treesAndSun_1080-1080.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkNewBuild/treesAndSun_763-1080.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkReform/reformImg-1.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkReform/reformImg-1_1280-1280.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkReform/reformImg-1_333-1280.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkReform/reformImg-1_904-1280.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkReform/reformImg-2.jpg
+#	new file:   wp-content/themes/saitohCon/Images/ChkReform/reformImg-3.jpg
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (1).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (10).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (11).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (12).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (13).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (14).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (15).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (16).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (17).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (18).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (19).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (2).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (20).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (21).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (22).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (23).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (24).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (25).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (26).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (27).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (28).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (29).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (3).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (30).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (31).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (4).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (5).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (6).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (7).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (8).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB (9).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (1).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (10).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (11).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (12).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (13).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (14).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (15).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (16).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (17).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (18).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (19).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (2).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (20).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (21).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (22).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (23).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (24).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (25).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (26).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (27).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (28).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (29).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (3).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (30).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (31).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (32).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (4).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (5).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (6).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (7).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (8).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/00_newBuild/newB_2 (9).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/058.JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/DSC01790.JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/DSC01798.JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (1).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (10).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (11).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (12).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (13).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (14).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (15).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (16).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (17).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (18).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (19).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (2).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (20).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (21).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (22).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (23).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (24).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (25).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (26).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (27).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (28).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (29).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (3).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (30).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (31).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (32).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (33).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (34).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (35).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (36).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (37).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (38)_1.JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (39)_1.JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (4).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (5).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (6).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (7).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (8).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/01_reform/ref (9).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (1).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (10).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (11).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (12).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (13).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (14).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (15).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (16).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (17).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (18).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (19).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (2).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (20).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (3).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (4).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (5).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (6).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (7).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (8).JPG
+#	new file:   wp-content/themes/saitohCon/Images/Gallary/02_inspection/chk (9).JPG
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/TAKUMI-1.JPG
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/TAKUMI-2.JPG
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/TAKUMI-3.JPG
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/TAKUMI-4.JPG
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/TAKUMI-5.JPG
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/a-book_1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/architecture_1197-1920.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/blogBtn.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/blogBtnMB.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/company_1280-1280.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/consulting_1920-1280.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/delegate_1920.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/delegate_600-1280.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/delegate_900-1280.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/homeRescue_1980-1319.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/homeRescue_1980-1521.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/homeRescue_2500-1664.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/homeRescue_2500-1920.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/light_1357-1920.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/mailMan_2500-1920.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/mailSend_2880-1920.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/newsImage.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/newsImageMB-1000-1500.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/newsImageMB-2.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/newsImageMB-2000-3000.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/newsImageMB-3.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/newsImageMB.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/newsNoImage.png
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/toolBox_1280-1280.jpg
+#	new file:   wp-content/themes/saitohCon/Images/TAKUMI/toolBox_333-1280.jpg
+#	new file:   wp-content/themes/saitohCon/Images/Takumi_LogoName.png
+#	new file:   wp-content/themes/saitohCon/Images/Takumi_LogoName_Main.png
+#	new file:   wp-content/themes/saitohCon/Images/Takumi_LogoName_Main_WB.png
+#	new file:   wp-content/themes/saitohCon/Images/cropped-w-logo-blue.png
+#	new file:   wp-content/themes/saitohCon/Images/favicon.ico
+#	new file:   wp-content/themes/saitohCon/Images/privacyPolicy.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/1-1200-1440.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/1.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/2-1200-1440.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/2.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/3-1200-1440.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/3.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/4-1200-1440.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/4.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/5-1200-1440.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/5.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/6-1200-1440.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/6.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/IMG_1-1200-1440.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/IMG_1-1920-768.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/IMG_3-1200-1440.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/IMG_3-1920-768.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/IMG_4-1200-1440.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/IMG_4-1920-768.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/IMG_5-1200-1440.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/IMG_5-1920-768.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/BackUp20221102/myouhou_1.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-1.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-2.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-3.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-4.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-5.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-6.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-7.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-8.JPG
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/MB-9.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-1.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-2.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-3.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-4.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-5.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-6.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-7.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-8.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/PC-9.jpg
+#	new file:   wp-content/themes/saitohCon/Images/slideShow/myouhou_1.JPG
+#	new file:   "wp-content/themes/saitohCon/Images/\343\203\241\343\203\274\343\203\253\343\201\256\343\202\242\343\202\244\343\202\263\343\203\263.png"
+#	new file:   "wp-content/themes/saitohCon/Images/\343\203\241\343\203\274\343\203\253\343\201\256\343\202\242\343\202\244\343\202\263\343\203\263_ORG.png"
+#	new file:   "wp-content/themes/saitohCon/Images/\343\203\252\343\203\225\343\202\251\343\203\274\343\203\240_1920-1079.jpg"
+#	new file:   "wp-content/themes/saitohCon/Images/\344\275\217\345\256\205\350\250\272\346\226\255_1920-1079.jpg"
+#	new file:   "wp-content/themes/saitohCon/Images/\345\233\272\345\256\232\351\233\273\350\251\261\343\201\256\343\202\242\343\202\244\343\202\263\343\203\2633.png"
+#	new file:   "wp-content/themes/saitohCon/Images/\345\233\272\345\256\232\351\233\273\350\251\261\343\201\256\343\202\242\343\202\244\343\202\263\343\203\2633_ORG.png"
+#	new file:   "wp-content/themes/saitohCon/Images/\345\267\245\343\201\225\343\202\223.jpg"
+#	new file:   "wp-content/themes/saitohCon/Images/\345\267\245\343\201\225\343\202\223_256.jpg"
+#	new file:   "wp-content/themes/saitohCon/Images/\350\200\220\351\234\207\345\267\245\344\272\213_1920-1079.jpg"
+#	new file:   "wp-content/themes/saitohCon/Images/\351\203\265\344\276\277\345\261\200\343\201\256\343\203\236\343\203\274\343\202\257.png"
+#	new file:   "wp-content/themes/saitohCon/Images/\351\203\265\344\276\277\345\261\200\343\201\256\343\203\236\343\203\274\343\202\257_ORG.png"
+#	new file:   "wp-content/themes/saitohCon/Images/\351\273\222\351\233\273\350\251\261\343\202\242\343\202\244\343\202\263\343\203\263.png"
+#	new file:   wp-content/themes/saitohCon/Js/blockEditorStyle/blockEditorStyle.js
+#	new file:   wp-content/themes/saitohCon/Js/com/BackUp 20220921 OK-Ver_rellaxImage.js
+#	new file:   wp-content/themes/saitohCon/Js/com/BackUp 20220921 OK-Ver_subPageGSAPDspCtr.js
+#	new file:   wp-content/themes/saitohCon/Js/com/fuwariAppearElmOnScrollUp.js
+#	new file:   wp-content/themes/saitohCon/Js/com/fuwariAppearElmOnScrollUp.min.js
+#	new file:   wp-content/themes/saitohCon/Js/com/hbgMenu.js
+#	new file:   wp-content/themes/saitohCon/Js/com/hbgMenu.min.js
+#	new file:   wp-content/themes/saitohCon/Js/com/imgGallary.js
+#	new file:   wp-content/themes/saitohCon/Js/com/imgGallary.min.js
+#	new file:   wp-content/themes/saitohCon/Js/com/imgGallaryJQ.js
+#	new file:   wp-content/themes/saitohCon/Js/com/imgGarally.js
+#	new file:   wp-content/themes/saitohCon/Js/com/jQuery_v2.1.1.js
+#	new file:   wp-content/themes/saitohCon/Js/com/jquery.flexslider-min.js
+#	new file:   wp-content/themes/saitohCon/Js/com/jquery.flexslider.js
+#	new file:   wp-content/themes/saitohCon/Js/com/mainPageSlideshow.js
+#	new file:   wp-content/themes/saitohCon/Js/com/mainPageSlideshow.min.js
+#	new file:   wp-content/themes/saitohCon/Js/com/pageComElmDspCtr.js
+#	new file:   wp-content/themes/saitohCon/Js/com/pageComElmDspCtr.min.js
+#	new file:   wp-content/themes/saitohCon/Js/com/rellax.min.js
+#	new file:   wp-content/themes/saitohCon/Js/com/rellaxBgImage.js
+#	new file:   wp-content/themes/saitohCon/Js/com/rellaxImage.js
+#	new file:   wp-content/themes/saitohCon/Js/com/rellaxImage.min.js
+#	new file:   wp-content/themes/saitohCon/Js/com/subPageGSAPDspCtr.js
+#	new file:   wp-content/themes/saitohCon/Js/com/subPageGSAPDspCtr.min.js
+#	new file:   wp-content/themes/saitohCon/Js/companyProfile/companyProfile.js
+#	new file:   wp-content/themes/saitohCon/Js/companyProfile/companyProfile.min.js
+#	new file:   wp-content/themes/saitohCon/Js/contactForm/autoKanajQ.js
+#	new file:   wp-content/themes/saitohCon/Js/contactForm/autoKanajQ.min.js
+#	new file:   wp-content/themes/saitohCon/Js/contactForm/contactForm.js
+#	new file:   wp-content/themes/saitohCon/Js/contactForm/contactForm.min.js
+#	new file:   wp-content/themes/saitohCon/Js/contactForm/jquery.autoKana.js
+#	new file:   wp-content/themes/saitohCon/Js/contactForm/jquery.autoKana.min.js
+#	new file:   wp-content/themes/saitohCon/Js/contactForm/subPageArticlesDspCtr.js
+#	new file:   wp-content/themes/saitohCon/Js/contactForm/subPageArticlesDspCtr.min.js
+#	new file:   wp-content/themes/saitohCon/Js/homeNewBuild/homeNewBuild.js
+#	new file:   wp-content/themes/saitohCon/Js/homeNewBuild/homeNewBuild.min.js
+#	new file:   wp-content/themes/saitohCon/Js/privacyPolicy/privacyPolicy.js
+#	new file:   wp-content/themes/saitohCon/Js/privacyPolicy/privacyPolicy.min.js
+#	new file:   wp-content/themes/saitohCon/Js/singleArchive/jquery.archiveList.js
+#	new file:   wp-content/themes/saitohCon/Js/singleArchive/jquery.archiveList.min.js
+#	new file:   wp-content/themes/saitohCon/Js/singleArchive/js_mainPageCatBtnClk.js
+#	new file:   wp-content/themes/saitohCon/Js/singleArchive/js_mainPageCatBtnClk.min.js
+#	new file:   wp-content/themes/saitohCon/Js/singleArchive/js_scrollBarCtl.js
+#	new file:   wp-content/themes/saitohCon/Js/singleArchive/js_scrollBarCtl.min.js
+#	new file:   wp-content/themes/saitohCon/archive.php
+#	new file:   wp-content/themes/saitohCon/archiveListDspCtr.php
+#	new file:   wp-content/themes/saitohCon/assets/clearEnvStyle.css
+#	new file:   wp-content/themes/saitohCon/assets/clearEnvStyle.min.css
+#	new file:   wp-content/themes/saitohCon/assets/flexslider.css
+#	new file:   wp-content/themes/saitohCon/assets/fonts/flexslider-icon.eot
+#	new file:   wp-content/themes/saitohCon/assets/fonts/flexslider-icon.svg
+#	new file:   wp-content/themes/saitohCon/assets/fonts/flexslider-icon.ttf
+#	new file:   wp-content/themes/saitohCon/assets/fonts/flexslider-icon.woff
+#	new file:   wp-content/themes/saitohCon/assets/fuwariAppearElmOnScrollUp.css
+#	new file:   wp-content/themes/saitohCon/assets/hbgMenu.css
+#	new file:   wp-content/themes/saitohCon/assets/hbgMenu.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_breakpoints.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_defaultStyle.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_footerStyle.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_forDEBUG.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_headerStyle.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_mainUtility.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_mixinDefine.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_mixinForContactForm.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_rellax.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_sideScrollStyle.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_subPageStyle.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/com/_valuablesDefine.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/00_pageBaseSkeleton/_00_pageBaseSkeleton.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/00_pageBaseSkeleton/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/00_pageBaseSkeleton/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/00_pageBaseSkeleton/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/00_pageBaseSkeleton/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/00_pageBaseSkeleton/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/a_index/_mainPage.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/a_index/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/a_index/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/a_index/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/a_index/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/a_index/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/_ArcCatDigestPage.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/_ArcCatListPgUtil.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forSingle.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forSingle.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forSingle.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forSingle.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forSingle.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forWPBlock.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forWPBlock.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forWPBlock.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forWPBlock.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/forWPBlock.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/archive/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/companyProfile/_companyProfile.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/companyProfile/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/companyProfile/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/companyProfile/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/companyProfile/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/companyProfile/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/contactForm/_contactForm.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/contactForm/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/contactForm/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/contactForm/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/contactForm/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/contactForm/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeInspect/_homeIns.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeInspect/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeInspect/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeInspect/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeInspect/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeInspect/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeNewBuild/_homeNewBuild.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeNewBuild/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeNewBuild/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeNewBuild/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeNewBuild/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeNewBuild/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeReform/_homeReform.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeReform/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeReform/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeReform/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeReform/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/homeReform/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/newsBlog/_newsBlog.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/newsBlog/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/newsBlog/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/newsBlog/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/newsBlog/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/newsBlog/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/ourSkills/_ourSkills.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/ourSkills/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/ourSkills/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/ourSkills/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/ourSkills/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/ourSkills/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/privacyPolicy/_privacyPolicy.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/privacyPolicy/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/privacyPolicy/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/privacyPolicy/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/privacyPolicy/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/privacyPolicy/style.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/stConstGallery/_stConstGallery.scss
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/stConstGallery/style.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/stConstGallery/style.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/stConstGallery/style.min.css
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/stConstGallery/style.min.css.map
+#	new file:   wp-content/themes/saitohCon/assets/scss/contents/stConstGallery/style.scss
+#	new file:   wp-content/themes/saitohCon/category.php
+#	new file:   wp-content/themes/saitohCon/categoryListDspCtr.php
+#	new file:   wp-content/themes/saitohCon/contents/com/Slide-MAIN_StyleDef.php
+#	new file:   wp-content/themes/saitohCon/contents/com/Slide-MAIN_UseIndex.php
+#	new file:   wp-content/themes/saitohCon/contents/com/Slide-TAKUMI_UseIndex.php
+#	new file:   wp-content/themes/saitohCon/contents/com/dspPostInfoAtList.php
+#	new file:   wp-content/themes/saitohCon/contents/com/galleryStyle.php
+#	new file:   wp-content/themes/saitohCon/contents/contactFormCtr/inputDataConf.php
+#	new file:   wp-content/themes/saitohCon/contents/contactFormCtr/inputDataEdit.php
+#	new file:   wp-content/themes/saitohCon/contents/contactFormCtr/inputDataSend.php
+#	new file:   wp-content/themes/saitohCon/contents/contactFormCtr/sendAddress.txt
+#	new file:   wp-content/themes/saitohCon/footer.php
+#	new file:   wp-content/themes/saitohCon/fpSection-1-2.php
+#	new file:   wp-content/themes/saitohCon/front-page.php
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/LICENSE
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/Mobile_Detect.json
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/Mobile_Detect.php
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/README.md
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/composer.json
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/docker-compose.yml
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/docs/CONTRIBUTING.md
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/docs/HISTORY.md
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/docs/ISSUE_TEMPLATE.md
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/docs/KNOWN_LIMITATIONS.md
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/export/exportToJSON.php
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/namespaced/Detection/MobileDetect.php
+#	new file:   wp-content/themes/saitohCon/func/Mobile-Detect-2.8.39/phpcs.xml
+#	new file:   wp-content/themes/saitohCon/func/Mobile_Detect.php
+#	new file:   wp-content/themes/saitohCon/func/blockEditorCss.php
+#	new file:   wp-content/themes/saitohCon/func/categoryCtr.php
+#	new file:   wp-content/themes/saitohCon/func/globalVariablesDef.php
+#	new file:   wp-content/themes/saitohCon/func/greetingMessage.php
+#	new file:   wp-content/themes/saitohCon/func/myJavaScript.php
+#	new file:   wp-content/themes/saitohCon/func/myStyleSheet.php
+#	new file:   wp-content/themes/saitohCon/func/seo_structureData.php
+#	new file:   wp-content/themes/saitohCon/func/styleDef-blockEditor.php
+#	new file:   wp-content/themes/saitohCon/functions.php
+#	new file:   wp-content/themes/saitohCon/googled5ef8960ccd37716.html
+#	new file:   wp-content/themes/saitohCon/header.php
+#	new file:   wp-content/themes/saitohCon/index.php
+#	new file:   wp-content/themes/saitohCon/page-baseTemplate.php
+#	new file:   wp-content/themes/saitohCon/page-companyProfile.php
+#	new file:   wp-content/themes/saitohCon/page-contactFormCtr.php
+#	new file:   wp-content/themes/saitohCon/page-homeInspect.php
+#	new file:   wp-content/themes/saitohCon/page-homeNewBuild.php
+#	new file:   wp-content/themes/saitohCon/page-homeReform.php
+#	new file:   wp-content/themes/saitohCon/page-ourSkills.php
+#	new file:   wp-content/themes/saitohCon/page-privacyPolicy.php
+#	new file:   wp-content/themes/saitohCon/page-stConstGallery.php
+#	new file:   wp-content/themes/saitohCon/page.php
+#	new file:   wp-content/themes/saitohCon/screenshot.jpg
+#	new file:   wp-content/themes/saitohCon/sidebar-archiveList.php
+#	new file:   wp-content/themes/saitohCon/sidebar.php
+#	new file:   wp-content/themes/saitohCon/siglePageDspCtr.php
+#	new file:   wp-content/themes/saitohCon/single.php
+#	new file:   wp-content/themes/saitohCon/style.css
+#	new file:   wp-content/themes/saitohCon/w3cValidation/archive.php
+#	new file:   wp-content/themes/saitohCon/w3cValidation/category.php
+#	new file:   wp-content/themes/saitohCon/w3cValidation/images/favicon.ico
+#	new file:   wp-content/themes/saitohCon/w3cValidation/images/vcss-blue.gif
+#	new file:   wp-content/themes/saitohCon/w3cValidation/images/vcss.gif
+#	new file:   wp-content/themes/saitohCon/w3cValidation/images/w3c.png
+#	new file:   wp-content/themes/saitohCon/w3cValidation/style/base.css
+#	new file:   wp-content/themes/saitohCon/w3cValidation/style/results.css
+#	new file:   wp-content/themes/saitohCon/w3cValidation/w3cValidate withWarning.html
+#	new file:   wp-content/themes/saitohCon/w3cValidation/w3cValidate.html
 #
 
 
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>git branch -M main
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>git branch -M main
 
 
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>git remote add origin https://github.com/SuperNaoT/WaPlus_SiteCode.git
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>git remote add origin https://github.com/SuperNaoT/WaPlus_SiteCode.git
 
 
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>git push -u origin main
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>git push -u origin main
 Enumerating objects: 526, done.
 Counting objects: 100% (526/526), done.
 Delta compression using up to 4 threads
@@ -501,8 +528,8 @@ To https://github.com/SuperNaoT/WaPlus_SiteCode.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>
-D:\Documents\01_StudyWEB\00)_WaPlus\wordpress>
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>
+D:\Documents\～/01) 齋藤建築/★HP/★st-daikuDev\wordpress>
 
 
 

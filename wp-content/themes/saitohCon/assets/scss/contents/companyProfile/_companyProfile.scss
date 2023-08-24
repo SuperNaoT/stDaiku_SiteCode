@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+// 
+// ***********************************************
+// ★ 各種配下ページ、表示設定
+// ***********************************************
+.mainContents {
+
+  // 
+  // 各種ページ、詳細情報記述エリア定義
+  .detailInfo {
+
+    // 
+    // 会社概要ページ固有設定
+    table tr th {
+      padding-top: 20px;
+      // font-size: $articleCharSize;
+    }
+    @include mquery( "mb" )  {
+      table tr {
+        // font-size: $articleCharSizeMB;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 2em;
+        padding: 0;
+        // padding-top: 20px;
+      }  
+    }
+    td {
+      // border: 1px solid red;
+      ul {
+        // border: 1px solid lime;
+        padding-left: 20px;
+        @include mquery( "mb" ) {
+          padding-left: 10px;
+           margin-left: 0;
+          li { font-size: 13px; }
+        }
+      }
+    }
+    @include mquery( "pc" ) { .leftPad50 { padding-left: 50px; padding-right: 30px; } }
+    @include mquery( "mb" ) { .leftPad50 { width: 28%; } }
+
+    background-image: linear-gradient(90deg,  rgba(255, 255, 255, 0.7 ) 0%,
+                                              rgba(255, 255, 255, 0.6 ) 45%,
+                                              rgba(255, 255, 255, 0.5 ) 70%,
+                                              rgba(255, 255, 255, 0.4 ) 95%,
+                                              rgba(255, 255, 255, 0.3 ) 100% ),
+                      linear-gradient(180deg, rgba(255, 255, 255, 0.7 ) 0%,
+                                              rgba(255, 255, 255, 0.6 ) 25%,
+                                              rgba(255, 255, 255, 0.5 ) 50%,
+                                              rgba(255, 255, 255, 0.4 ) 75%,
+                                              rgba(255, 255, 255, 0.3 ) 100% ),
+                                          // url( "../../../../Images/ChkNewBuild/forestLeaves.jpg" );
+                                          url( "../../../../Images/TAKUMI/company_1280-1280.jpg" );
+    background-size:     cover;
+    background-position: center;
+    background-repeat:   no-repeat;  
+
+  }
+
+  // 
+  // ページイメージ画像設定
+  #section-1 {
+
+    // 
+    // アニメーション・サイト訪問者への、挨拶バナー
+    // ***************************
+    .greeting-area { @include style-greetingArea-wrapper(); }
+
+    position: relative;
+
+    // 
+    // 【pallax効果】「rellax」ライブラリ利用、
+    //  ■ Mobileデバイス利用時の設定
+    .rlxBGBaseArea {
+      position: relative;
+      overflow: hidden;
+
+      @include mquery( "mb" ) {
+
+        width:  90%;
+        margin: 50px auto;
+
+        border: 1px solid #333;
+        border-radius: 8px;
+
+        .rlxParentElmBG {
+
+          // border: 2px solid blueviolet;       // for DEBUG!
+          // background-color: blueviolet;       // for DEBUG!
+
+          .rlxImgFrameH {
+
+            // 
+            //【.rlxImgCfgH】画像そのものの大きさに因り、
+            //  親要素の高さが決まる！
+            // ****************************************
+
+            // border: 2px dashed lime;       // for DEBUG!
+
+            @include style-rlxImgFrame( 0 );
+
+            // 
+            // 縦長親領域対応、中心線移動処理
+            // 中心部分を、左方向にだけ移動する。
+            position: absolute;
+            left: -100%;
+
+            .rlxImgCfgH {
+
+              // 
+              // 背景で動く画像のサイズを決める。
+              // 記事の量に因り「親領域が縦長に成る程」、
+              // この画像の高さを大きくして埋める必要が有る！
+              height: 320vh;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .imgFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .pageCthImage  {
+                                                                                                          // 高さ  Y位置
+                                  @include style-imageDispPos( "../../../../Images/slideShow/myouhou_2.JPG", 45vw, 22vh );     // 120% 77vh
+        @include mquery( "mb" ) { @include style-imageDispPos( "../../../../Images/slideShow/myouhou_2.JPG", 30%,  26vh ); }   // 60% 130vh 
+        z-index: -1;
+  
+      }
+      overflow: hidden;
+      z-index: -1;
+
+      // border: 1px solid red;
+    }  
+  }
+}
+

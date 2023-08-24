@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+// 
+// ***********************************************
+// ★ 各種配下ページ、表示設定
+// ***********************************************
+.mainContents {
+
+  @include mquery( "pc" ) {
+
+    // 
+    // 各種ページ、詳細記事記述エリア定義
+    .detailInfo {
+
+      .blkInfo {
+        // border: 1px solid red;
+        width: 90%;
+        margin-left: 30px;
+
+        p {
+          margin-left: 50px;
+          // font-size: $articleCharSize;
+        }
+      }
+    }
+  }
+
+  @include mquery( "mb" ) {
+
+    // 
+    // 各種ページ、詳細情報記述エリア定義
+    .detailInfo {
+      width: 95%;
+      margin: 50px auto;
+      padding: 0;
+      // border: none;
+      // border: 1px solid lime;
+
+      .infoArea {
+        .sBysBlk {
+          .blkInfo {
+            // border: 1px solid red;
+            margin-left : 0;
+            margin-right: 0;
+            width: 100%;
+          }    
+        }
+      }
+    }
+  }
+
+
+  // 
+  // ページメイン部分、背景画像設定
+  #section-1 {
+
+    // 
+    // アニメーション・サイト訪問者への、挨拶バナー
+    // ***************************
+    .greeting-area { @include style-greetingArea-wrapper(); }
+
+    #detailInfo {
+      @include mquery( "pc" ) {
+        background-image: linear-gradient(90deg,  rgba(255, 255, 255, 0.3 ) 0%,
+                                                  rgba(255, 255, 255, 0.4 ) 45%,
+                                                  rgba(255, 255, 255, 0.5 ) 70%,
+                                                  rgba(255, 255, 255, 0.6 ) 95%,
+                                                  rgba(255, 255, 255, 0.7 ) 100% ),
+                          linear-gradient(180deg, rgba(255, 255, 255, 0.3 ) 0%,
+                                                  rgba(255, 255, 255, 0.4 ) 25%,
+                                                  rgba(255, 255, 255, 0.5 ) 50%,
+                                                  rgba(255, 255, 255, 0.6 ) 75%,
+                                                  rgba(255, 255, 255, 0.7 ) 100% ),
+                          url( "../../../../Images/TAKUMI/delegate_1920.png" );
+      }
+      @include mquery( "mb" ) {
+        background-image: linear-gradient(90deg,  rgba(255, 255, 255, 0.3 ) 0%,
+                                                  rgba(255, 255, 255, 0.4 ) 45%,
+                                                  rgba(255, 255, 255, 0.5 ) 70%,
+                                                  rgba(255, 255, 255, 0.6 ) 95%,
+                                                  rgba(255, 255, 255, 0.7 ) 100% ),
+                          linear-gradient(180deg, rgba(255, 255, 255, 0.3 ) 0%,
+                                                  rgba(255, 255, 255, 0.4 ) 25%,
+                                                  rgba(255, 255, 255, 0.5 ) 50%,
+                                                  rgba(255, 255, 255, 0.6 ) 75%,
+                                                  rgba(255, 255, 255, 0.7 ) 100% ),
+                          url( "../../../../Images/TAKUMI/delegate_600-1280.png" );        
+      }
+      background-size:     cover;
+      background-position: center;
+      background-repeat:   no-repeat;  
+  }
+
+    // 
+    // ページ内、工さん画像位置決定用定義
+    // 「.imgFrame」用
+    position: relative;
+
+    // 
+    // 工さん画像位置決定用定義
+    .imgFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .pageCthImage  {
+                                                                                                    // 高さ  Y位置
+                                  @include style-imageDispPos( "../../../../Images/TAKUMI/TAKUMI-2.JPG", 45vw, 22vh );     // 120% 77vh
+        @include mquery( "mb" ) { @include style-imageDispPos( "../../../../Images/TAKUMI/TAKUMI-2.JPG", 15%,  13vh ); }   // 60% 30vh 
+        z-index: -1;
+  
+      }
+      overflow: hidden;
+      z-index: -1;
+
+      // border: 1px solid red;
+    }
+  }
+}

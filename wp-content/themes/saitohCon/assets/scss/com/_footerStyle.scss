@@ -1,0 +1,155 @@
+@charset 'utf-8';
+//
+// ***********************************************
+// ★ サイトフッター セクション
+// ***********************************************
+footer {
+  text-align: center;
+
+  .dspPC { @include mquery("mb") { display: none; } }   //　NTAD 20220617
+  .dspMB { @include mquery("pc") { display: none; } }
+
+  // 
+  // フッター内「郵便番号」「電話機」ロゴ用設定
+  .ftPhIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    .phoneIcon { 
+      margin-right: 5px;
+      @include mquery( "mb" ) { width: 14px; }
+      @include mquery( "pc" ) { width: 14px; }
+    }  
+  }
+
+  // border: 2px dashed lime;
+
+  // 
+  // 縦横中心表示
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #f6f6f6;
+  background-color: rgba(192,218,239,0.7);
+  font-size: 1.8vh;         // default : only H1 using.
+
+  .siteFooter {
+    display: flex;
+    @include mquery( "mb" ) { flex-direction: column; }
+    @include mquery( "pc" ) { flex-direction: row;    }
+    justify-content: center;
+
+    width: 90%;
+
+    // margin-bottom: 50px;
+    // border: 2px dashed red;
+
+    .cmpyInfo {
+      // position: relative;
+      flex-direction: column;
+      text-align: center;
+
+      @include mquery( "mb" ) {
+        // margin: 80px 5vw 30px 5vw;
+        margin: 0 auto;
+        margin-top: 50px;           // ***** 20220319 80px
+        margin-bottom: 0px;        // ***** 20220319 30px
+        width: 93vw;
+      }
+      @include mquery( "pc" ) {
+        margin: 30px 0px 0 0px;
+        padding: 0 0;
+        width: 50%;
+      }
+
+      // border: 1px solid gray;       // 1
+      // border-radius: 5px;
+
+      .footerLogo img, .footerLogoNL img {
+        @include mquery( "mb" ) { margin: 0px auto; width: 60vw; margin-bottom: 20px; };   // margin: 20px 15px
+        @include mquery( "pc" ) { margin: 20px 5vw; width: 20vw; };   // 15vw
+      }
+      .footerLogo:hover {
+        transition: transform 0.5s;
+        transform: scale(1.05);
+      }
+      h1 {
+                                   font-size: 3vh;   // 2.5vh;
+        @include mquery( "mb" )  { font-size: 2.5vh; }      // ***** 20220319
+        font-weight: bold;
+        line-height: 2em;
+        color: #647C92;
+      }
+      .companyAddr {
+        padding: 20px 20px 12px 20px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        font-size: 14px;             // 1.5vh;
+        font-weight: bold;
+        line-height: 1.5em;
+        @include mquery( "mb" ) { margin: 20px 5vw 0 5vw; }
+        @include mquery( "pc" ) { margin: 20px 100px; }
+      }
+
+      .fixed-greeting-area {
+        position: relative;
+        @include style-greetingArea();
+        width: 100%;
+        border: 1px solid blue;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        // @include mquery( "mb" ) { width: 80%; margin: 0 10% 30px 10%; }
+        @include mquery( "mb" ) { width: 85vw;  margin: 0 auto; }
+      }
+    }
+
+    #footerNav {
+      text-align: left;
+      font-size: 2vh;
+      font-weight: normal;      // bold;
+      line-height: 2em;
+
+      margin-bottom: 0;         // ***** 20220319 移動
+      padding: 40px 50px;
+
+      border: 1px solid #333;
+      border-radius: 8px;
+      background-color: rgba(85,121,155,0.8);
+
+      li a {
+        color: #f6f6f6;
+      }
+      li a:hover {
+        color: $btnHoverBgColor;
+      }
+
+      @include mquery( "mb" ) {
+        font-size: 1.8vh;           // ***** 20220319 
+        line-height: 2em;  
+        width: 83vw;
+        padding: 30px 20px 20px 30px;    // ***** 20220319
+        margin: 20px 5vw 0 5vw; 
+      }
+      @include mquery( "pc" ) {
+        margin: 80px 50px 20px 50px;
+      }
+    }
+  }
+
+  .w3cValidation {
+    margin: 30px 0;
+  }
+  .rightsNote {
+    margin: 10px auto;
+    // margin-bottom: 5px;
+  }
+  .powerdNote {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.sa {
+  opacity: 0;
+  /* transition: all .5s ease; */
+  /* transition: all 1s ease; */
+  transition: all 2s ease;
+
+  /* border: 1px solid green;
+  background-color: lightblue;
+  opacity: 0.3; */
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa--lr {
+  transform: translate(-150px, 0);
+}
+
+.sa--rl {
+  transform: translate(150px, 0);
+}
+
+.sa--up {
+  transform: translate(0, 150px);
+}
+
+.sa--down {
+  transform: translate(0, -150px);
+}
+
+.sa--scaleUp {
+  transform: scale(.5);
+}
+
+.sa--scaleDown {
+  transform: scale(1.5);
+}
+
+.sa--rotateL {
+  transform: rotate(180deg);
+}
+
+.sa--rotateR {
+  transform: rotate(-180deg);
+}

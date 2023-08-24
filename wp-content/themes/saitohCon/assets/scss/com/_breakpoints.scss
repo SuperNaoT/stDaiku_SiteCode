@@ -1,0 +1,13 @@
+// 
+// レスポンシヴデザイン向け、ブレークポイント設定ファイル
+// 【参照：https://zenn.dev/web_tips/articles/095d7419507ca9】
+$breakpoints: (
+    "mb": "screen and (max-width: 799px)",
+    "pc": "screen and (min-width: 800px)",
+) !default;
+
+@mixin mquery( $breakpoint ) {
+  @media #{ map-get( $breakpoints, $breakpoint ) } {
+      @content;
+  }
+}

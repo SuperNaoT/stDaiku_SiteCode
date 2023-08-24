@@ -1,0 +1,25 @@
+https://www.st-daiku.co.jp/
+hp_contact@st-daiku.co.jp
+6
+[noSelect     ]noSelectError
+[homeNewBuild ]info@st-daiku.co.jp
+[reformConsul ]info@st-daiku.co.jp
+[homeInspect  ]info@st-daiku.co.jp
+[earthQChk    ]info@st-daiku.co.jp
+[other        ]info@st-daiku.co.jp
+
+//
+// ■ 2023/05/01：迷惑メール対策にて「和Plusドメインへ送信」
+//[homeNewBuild ]infoST@waplus-jpn.co.jp
+//[reformConsul ]infoST@waplus-jpn.co.jp
+//[homeInspect  ]infoST@waplus-jpn.co.jp
+//[earthQChk    ]infoST@waplus-jpn.co.jp
+//[other        ]infoST@waplus-jpn.co.jp
+
+//
+// 1レコード目：客先送信メール内記載URL
+// 2レコード目：HPフォーム送信元アドレス
+// 3レコード目：取得対象レコード数
+// contactForm.php では、データ部分６レコードの決め読込み
+// contactForm.php では、15バイト目から改行コード前迄をアドレスとして扱う
+//

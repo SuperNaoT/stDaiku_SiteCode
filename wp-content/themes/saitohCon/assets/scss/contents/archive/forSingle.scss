@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+// 
+// 各種値、定義変数格納ファイル
+@import "../../com/defaultStyle";
+
+//
+// **************************************************
+// **************************************************
+// **************************************************
+//                                                   
+// ■ 個別投稿記事表示ページ用設定
+// 　（投稿ページ本体：single.php）
+//                                                   
+// **************************************************
+// **************************************************
+// **************************************************
+//
+
+/* アイキャッチを中央寄せにする */
+.eye-catch-wrap{
+  text-align: center;
+}
+
+// 
+// ***********************************************
+// ★ 各種配下ページ、表示設定
+// ***********************************************
+.mainContents {
+
+  // 
+  // ページメイン部分、背景画像設定
+  #section-postsList {
+    position: relative;
+    .imgFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .pageCthImage  {
+                                  @include style-imageDispPos( "../../../../Images/TAKUMI/newsImage.jpg", 45vw, 28vh, 12vw );     // 45vw, 22vh
+        @include mquery( "mb" ) { @include style-imageDispPos( "../../../../Images/TAKUMI/newsImage.jpg", 30%,  30vh ); }   // 60% 130vh 
+        z-index: -1;
+  
+      }
+      .pageCthImageBlog  {                                                                                                    // 高さ  Y位置
+                                  @include style-imageDispPos( "../../../../Images/TAKUMI/blogBtn.jpg",   45vw, 22vh, 12vw );     // 120% 77vh
+        @include mquery( "mb" ) { @include style-imageDispPos( "../../../../Images/TAKUMI/blogBtnMB.jpg", 30%,  30vh ); }   // 60% 130vh 
+        z-index: -1;
+  
+      }
+      overflow: hidden;
+      z-index: -1;
+
+      opacity: 0.5;
+
+      // border: 1px solid red;
+    }
+
+    .infoArea {
+      // background-color: rgba();
+      background-color: #FEF9FA;
+      background-color: rgba( 254, 249, 250, 0.8 );
+    }
+
+    // 
+    // 前後記事へ移行ボタン書式
+    .nextPrevArea {
+      margin: 60px auto;
+      // margin-bottom: 60px;
+      // border: 2px solid purple;
+      .post-link {
+        font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+        font-size: $articleTitleCharSize;
+        width: 500px;
+        @include mquery( "mb" ) {
+          width: 100%;
+          font-size: $articleTitleCharSizeMB;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        // padding: 10px 15px;
+
+        border-top: none;
+        border-left: none;
+        border-radius: 5px;
+        box-shadow: 6px 6px 12px rgb(198, 198, 198);
+
+        // .extLink {
+        //   margin: 10px;
+        //   width: 100% !important;       // 100%
+        //   // border: 2px dashed red;
+        // }
+        .extLink:first-child { margin-top: 0 !important; }
+
+
+        // 
+        // ボタン本体
+        .linkInternalDec {
+          width: 100%;
+          margin: 0;
+          // border: 2px solid lime;    // for DEBUG !!!
+        }
+        // 
+        // 右側横棒飾り
+        .linkInternalDec a::after {
+          width: 50px;
+          @include mquery( "mb" )  { width: 25px; right: -5px; }     // -35px;
+          // border: 2px solid blue;    // for DEBUG !!!
+        }
+      }
+    }
+  }
+}

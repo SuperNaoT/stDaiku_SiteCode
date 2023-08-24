@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+// 
+// ***********************************************
+// ★ 各種配下ページ、表示設定
+// ***********************************************
+.mainContents {
+
+  @include mquery( "pc" ) {
+
+    // 
+    // 個人情報保護指針文章説明用設定（アニメ無し文章）
+    p {
+      font-size: 18px;
+      line-height: 1.5em;
+      margin: 50px 80px;
+    }
+
+    // 
+    // 各種ページ、詳細記事記述エリア定義
+    .detailInfo {
+
+      p {
+        font-size: 16px;
+        margin: 20px 50px;
+      }
+
+      h2 {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 2em;
+        padding-top: 10px;
+      }
+    }
+
+  }
+
+  @include mquery( "mb" ) {
+
+    .ttlExpMB {
+      width: 80vw;
+      font-size: $pageExpCharSizeMB;
+      font-weight: bold;
+      line-height: 2em; 
+      margin: 30px auto;
+    }
+  
+    // 
+    // 各種ページ、詳細情報記述エリア定義
+    .detailInfo {
+
+      p {
+        font-size: 13px;
+        // font-weight: bold;
+        line-height: 1.5em;
+        margin-left: 30px;
+      }
+
+      h2 {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 1.5em;
+        padding-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+
+
+  // 
+  // ページイメージ画像設定
+  #section-1 {
+
+    // 
+    // アニメーション・サイト訪問者への、挨拶バナー
+    // ***************************
+    .greeting-area { @include style-greetingArea-wrapper(); }
+
+    position: relative;
+    .imgFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .pageCthImage  {
+                                                                                                    // 高さ  Y位置
+                                  @include style-imageDispPos( "../../../../Images/privacyPolicy.jpg", 45vw, 22vh );     // 120% 77vh
+        @include mquery( "mb" ) { @include style-imageDispPos( "../../../../Images/privacyPolicy.jpg", 60%,  30vh ); }   // 60% 130vh 
+        z-index: -1;
+  
+      }
+      overflow: hidden;
+      z-index: -1;
+
+      // border: 1px solid red;
+    }  
+  }
+}
+

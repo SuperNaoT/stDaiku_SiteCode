@@ -1,0 +1,477 @@
+@charset "utf-8";
+
+// 
+// ***********************************************
+// ★ 各種配下ページ、表示設定
+// ***********************************************
+
+// 
+// 共通定義
+// ■ 各種リンクボタン上表示「Font Awsome アイコン」の色とサイズを設定
+// **************************************************
+.faClkHand {
+  @include style-fontAwsClickHand( red, 14px );
+}
+
+.mainContents {
+
+  // 
+  // 各種ページ、詳細情報記述エリア定義
+  .detailInfo {
+
+    // border: 2px solid blue;
+    
+    // 
+    // 「入力フォーム」タイトル詳細
+    h2 {
+      display: inline-block;
+      font-size: 1.3vw;
+      @include mquery( "mb" ) { font-size: 3.5vw; }
+      font-weight: normal;      // bold;
+      line-height: 1.5em;
+      position: relative;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      overflow: hidden;
+      text-decoration: none;      
+    }
+    // 下線設定
+    h2:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #333;
+      content: "";        
+    }
+
+    // 
+    // 共通ラベル文字列設定
+    // font-size:   1.2vw;     // 1.2vw
+    // line-height: 2em;
+    // letter-spacing: 1px;
+
+    // margin-left: 3vw;           // 10vw;
+
+    transform: translateX( -40% );
+    opacity: 0;
+
+    .inStrPC, .inStrMB {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: rgb(102,90,26);
+      color: darkblue;
+      // color: #647C92;
+    }
+    .inStrMB {
+      font-size: 3vw;         // 16px;
+      font-size: $articleCharSizeMB;
+    }
+    .inTxtPC, .inTxtMB {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      width: 60%;                   // 45%;
+      color: rgb(102,90,26);
+      color: darkblue;
+      // color: #647C92;
+      background-color: rgba( 255,255,255,0.7 );
+
+      padding: 20px;
+      border: 1px solid rgba(102,90,26, 0.8);
+      border-radius: 8px;
+      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+    }
+    .inTxtMB {
+      width: 53vw;
+      font-size: 14px;
+      font-size: 3vw;
+      font-size: $articleCharSizeMB;
+      font-weight: bold;
+      line-height: 1.5em;
+    }
+
+    // 
+    // ************************************
+    // ************************************
+    // ■ 入力フォーム全体表示設定
+    // ************************************
+    // ************************************
+    form {
+
+        max-width: $areaMaxWidth;
+        width: 100%;
+        font-size: 1vw;
+
+        @include style-selectArrow;
+
+        // border: 1px solid red;
+
+      // }
+      
+      // 
+      // フォーム内、個別アイテム親要素
+      .item{
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+
+        @include mquery( "mb" )  {
+          font-size: 3vw;
+        }
+        // border: 2px dashed blue;
+      }
+
+      // 
+      // ラベル表示、レスポンシブ対応
+      // @include mquery( "mb" ) { .dspPC { display: none; }; };　NTAD 20220617
+      // @include mquery( "pc" ) { .dspMB { display: none; }; };
+      
+      // 
+      // メインラベル（左側縦棒飾り有り）表示設定
+      .label{
+        width: 20vw;                   // 180px;
+        @include mquery( "mb" ) {
+          width: 41vw;
+          font-size: 3vw;
+          line-height: 1.5em;
+        }
+
+        padding-left: 10px;
+        border-left: solid 5px #a0522d;
+      }
+      // .emLabel {
+      //   margin-top: 50px;
+      // }
+
+      // 
+      // ラベル（左側縦棒飾り無し）表示設定
+      .labelNoLBdr {
+        width: 20vw;
+        @include mquery( "mb" ) {
+          width: 41vw;
+          font-size: 3vw;
+          line-height: 1.5em;
+        }
+        padding-left: 15px;
+      }
+      
+      // 
+      // 「必須」文字列、表示設定
+      .label-required{
+        color: #ff6347;
+        font-weight: bold; 
+      }
+
+      // 
+      // 入力領域、表示設定
+      input[type="text"],
+      input[type="email"]{
+        border: solid 1px #aaa;
+        border-radius: 5px;
+        padding: 10px;
+
+        line-height: 1.5em;
+
+        background-color: rgba(246,246,246,0.8);
+
+        width: 32vw;
+        @include mquery( "mb" )  {
+          width: 57vw;
+          font-size: 16px;
+          // transform: scale(calc(12 / 16));
+        }
+
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+      }
+      // input[type="email"]{
+      //   margin-top: 50px;
+      // }
+      @include mquery( "pc" ) {
+        input[type="text"] {
+          width: 10vw;
+        }  
+      }
+
+      // 
+      // 各入力項目フォーカス時、背景色変更
+      input:focus,
+      select:focus,
+      textarea:focus,
+      button:focus {
+        background-color:#fff8dc;
+      }
+
+      // 
+      // セレクトボックス表示設定
+      select {
+        appearance: none;
+        cursor: pointer;
+        border: solid 1px #aaa;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(246,246,246,0.8);
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 1 );    // 0.5
+
+        // option { span { font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+        //                 font-weight: bold; } };
+
+        width: 32vw;                // 32vw 16vw;
+        @include mquery( "mb" ) {
+          width: 57vw;               // 57vw 45vw
+          font-size: 3vw;           // 2vw;
+          line-height: 3.5em;         // 3em
+        }
+      }
+
+      // 
+      // 「プライバシーポリシー同意」チェックボックス表示設定
+      .pvChkBox {
+        padding: 10px;
+
+        // margin-top: 70px;
+
+        font-size: 1vw;
+        line-height: 1.5em;
+
+        border-radius: 5px;
+        background-color: rgba(246,246,246,0.8);
+
+        width: 52vw;
+        @include mquery( "mb" )  {
+          // width: 90vw;
+          width: 80vw;
+          font-size: 3vw;
+        }
+
+        // box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+      }
+
+      // 
+      // 「入力領域」表示設定
+      textarea{
+        border: solid 1px #aaa;
+        border-radius: 5px;
+        padding: 10px;
+        height: 160px;
+        line-height: 1.5em !important;
+
+        width: 32vw;
+        @include mquery( "mb" )  {
+          width: 57vw;
+          font-size: 16px;
+          // transform: scale(calc(12 / 16));
+        }
+
+        background-color: rgba(246,246,246,0.8);
+        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5);
+      }
+      
+      // .sendBtn{
+      //   @include mquery( "pc" ) { margin: 100px 0 0 16vw; }
+      //   @include mquery( "mb" ) { margin:  60px 0 0 16vw; }
+      // }
+      .sendBtn {
+        button{
+          cursor: pointer;
+          color: #333;
+          letter-spacing: 1px;
+          font-size: 1vw;
+          line-height: 2em;
+          font-weight: bold;
+          padding: 10px 25px;
+          @include mquery( "mb" ) { padding: 15px 30px; font-size: 3vw; }   // font-size: 3vw
+          border: 1px solid #333;        // #aaa;
+          border-radius: 5px;
+        }
+        button:hover {
+          transition: transform 0.5s;
+          transform: scale(1.05);
+          color: white;
+          background-color: rgba(102,90,26,0.5);    // #665A1A;        
+        }
+        
+        // 
+        // *********************************
+        // 入力データ確認画面用設定
+        // *********************************
+        .confBtn{
+          cursor: pointer;
+          color: #333;
+          letter-spacing: 3px;
+          font-size: 1vw;
+          line-height: 2em;
+          font-weight: bold;
+          @include mquery( "pc" ) { padding: 10px 25px; margin: 100px 0 80px 5vw; }
+          // @include mquery( "mb" ) { padding: 15px 30px; margin:  60px 0 0 16vw; font-size: 3vw; }     // 7vw
+          @include mquery( "mb" ) { padding: 15px 30px; margin: 20px 0 0 5vw; font-size: 3vw; }     // 7vw
+          border: 1px solid #333;        // #aaa;
+          border-radius: 5px;
+          background-color: rgba(102,90,26,0.1);    // #665A1A;        
+        }
+        .confBtn:hover {
+          transition: transform 0.5s;
+          transform: scale(1.05);
+          color: white;
+          background-color: rgba(102,90,26,0.5);    // #665A1A;        
+        }
+      }
+
+      .confLabel{
+        width: 14vw;                   // 180px;
+        width: 20vw;                   // 180px;
+        font-size: 1.2vw !important;       // 2.5vw;
+        line-height: 2em !important;
+    
+        padding-left: 10px;
+        border-left: solid 5px #a0522d;
+
+        @include mquery( "mb" ) {
+          width: 34vw;    // 41vw;
+          font-size: $articleCharSizeMB !important;
+          line-height: 1.5em;
+          padding-left: 0;
+
+          // border: 2px dashed lime;
+        }
+
+        // border: 2px dashed lime;
+      }
+      .confLabelNoLBdr {
+        width: 14vw;
+        width: 20vw;
+        font-size: 1.2vw !important;       // 2.5vw;
+        line-height: 2em !important;
+    
+        @include mquery( "mb" ) {
+          // width: 41vw;
+          // font-size: 3vw !important;
+          width: 34vw;    // 41vw;
+          font-size: $articleCharSizeMB !important;
+          line-height: 1.5em;
+          padding-left: 0;
+        }
+        padding-left: 15px;
+      }
+
+      .error_list {
+        width: 50vw;
+        @include mquery( "mb" ) { width: 80vw; }
+        margin: 20px 0;
+        padding: 10px 30px;
+        color: #ff2e5a;
+        // font-size: 86%;
+        @include mquery( "mb" ) { font-size: 2vw; }
+        font-weight: 700;
+        text-align: left;
+        border: 2px solid #ff2e5a;
+        border-radius: 5px;
+      }
+
+      .dline { margin-top: 50px;}
+    }
+  }
+
+  // 
+  // ページイメージ画像設定
+  #section-1 {
+
+    // 
+    // アニメーション・サイト訪問者への、挨拶バナー
+    // ***************************
+    .greeting-area { @include style-greetingArea-wrapper(); }
+
+    position: relative;
+    .imgFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .pageCthImage  {
+                                                                                                          // 高さ  Y位置
+                                  // @include style-imageDispPos( "../../../../Images/slideShow/myouhou_3.JPG", 45vw, 22vh );     // 120% 77vh
+                                  @include style-imageDispPos( "../../../../Images/TAKUMI/consulting_1920-1280.jpg", 45vw, 22vh );     // 120% 77vh
+        @include mquery( "mb" ) { @include style-imageDispPos( "../../../../Images/TAKUMI/consulting_1920-1280.jpg", 30%,  26vh ); }   // 60% 130vh 
+        z-index: -1;
+  
+      }
+      overflow: hidden;
+      z-index: -1;
+      
+      // border: 1px solid red;
+    }  
+  }
+  #section-0 {
+    position: relative;
+    .imgFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .pageCthImage  {
+                                                                                                          // 高さ  Y位置
+                                  @include style-imageDispPos( "../../../../Images/TAKUMI/light_1357-1920.png", 45vw, 22vh );     // 120% 77vh
+        @include mquery( "mb" ) { @include style-imageDispPos( "../../../../Images/TAKUMI/light_1357-1920.png", 30%,  26vh ); }   // 60% 130vh 
+        z-index: -1;
+  
+      }
+      overflow: hidden;
+      z-index: -1;
+      
+      // border: 1px solid red;
+    }  
+  }
+  #section-2 {
+    position: relative;
+    .imgFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .pageCthImage  {
+                                                                                                          // 高さ  Y位置
+                                  @include style-imageDispPos( "../../../../Images/TAKUMI/mailMan_2500-1920.png", 45vw, 22vh );     // 120% 77vh
+        @include mquery( "mb" ) { @include style-imageDispPos( "../../../../Images/TAKUMI/mailMan_2500-1920.png", 30%,  26vh ); }   // 60% 130vh 
+        z-index: -1;
+  
+      }
+      overflow: hidden;
+      z-index: -1;
+      
+      // border: 1px solid red;
+    }  
+  }
+
+
+}
+
+// // 
+// // 「お問い合わせ他」ナビゲーションボタン群、ぺージ個別表示設定
+// // 「お問い合わせフォーム」では、
+// // １．ページ上部移動ボタン　表示のみ。
+// // *****************************************************
+// .navBtnCtr {
+//   // .navBtn {
+//   //   position: fixed;
+//   //   bottom: 20px;
+//   //   right:  520px;
+
+//   .navBtn {
+//     position: fixed;
+//     bottom: 20px;
+//     right:  20px;
+//     display: flex;
+//     z-index: 9;
+
+//     border: 1px solid lime;
+  
+//     @include mquery( "mb" ) { bottom: 40px; }
+//     @include mquery( "pc" ) { right: calc(10vw + 160px); }
+  
+//   }  
+// }

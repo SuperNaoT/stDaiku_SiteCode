@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+// 
+// ***********************************************
+// ★ 各種配下ページ、表示設定
+// ***********************************************
+.mainContents {
+
+  width: 100%;
+    
+  .dspPC { @include mquery("mb") { display: none; } }    //　NTAD 20220617
+  .dspMB { @include mquery("pc") { display: none; } }
+
+  // 
+  // 企業概要、ページタイトル表示設定
+  .pageTitle {
+    @include style-pageTitle;
+    transform: translateX( -100% );
+    margin-top: 50px;
+  }
+
+  // 
+  // ページタイトル付随説明文章用設定
+  // １．ＰＣ用
+  .ttlExpPC {
+    font-size: $pageExpCharSizePC;
+    line-height: 1.5em;
+    margin: 50px 80px;
+  }
+  // ２．Mobile用
+  .ttlExpMB {
+    width: 85vw;
+    font-size: $pageExpCharSizeMB;
+    font-weight: bold;
+    line-height: 2em; 
+    margin: 30px auto;
+  }
+
+  // 
+  // 配下（サブ）ページ、セクション（縦方向管理）情報記述エリア定義
+  .detailInfo {
+
+    margin: 50px 80px;
+
+    padding: 20px;
+    border: 1px solid rgba(102,90,26, 1);
+    border-radius: 8px;
+    
+    // 
+    // 文字列、基本設定
+    font-size: 1.2vw !important;       // 2.5vw;
+    line-height: 2em !important;
+    letter-spacing: 1px;
+
+    @include mquery( "mb" )  { width: 90vw; font-size: 13px; line-height: 1.5em; margin: 50px auto;}        // 理想文字サイズは14px
+  
+    // 
+    // アニメーション効果用設定
+    transform: translateX( 100% );
+    opacity: 0;
+
+    // 
+    // セクション内１件（１つのタイトルに関する）記事記述領域
+    .infoArea {
+
+      width: 95%;
+      margin: 0 auto;
+
+      // border: 1px solid lime;
+    
+      // 
+      // セクション「タイトル」
+      .infoTitle { @include style-infoTitle( $informationTitleColor ); margin: 20px auto; }
+
+      // 
+      // SECTION-2 以外では、この中に複数の記事を書き込める
+      .sBysBlk {
+        @include style-sideBySide;
+
+        // 
+        // セクション内１記事、縦一列記載領域（横並び管理）
+        .blkInfo {
+          font-size: $articleCharSize;           // 14px;
+          font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+          line-height: 1.5em;
+          padding: 40px 10px;
+          @include mquery( "mb" ) { padding-left: 0; }
+
+          margin: 0 auto;
+
+                                    p { margin: 10px; }           // 20px
+          @include mquery( "mb" ) { p { margin: 20px 0;
+                                        font-size: $articleCharSizeMB;
+                                        line-height: 1.5em;
+                                        letter-spacing: 0;
+                                        margin-left: 10px;
+                          
+                                        // padding-left: 0;
+                                        // border: 1px solid lime;
+                                      }
+          }
+
+          // background-color: rgba(0,255,255,0.1);
+          background: linear-gradient(to right, rgba(0,255,255,0.3), rgba(0,255,255,0));
+          border-radius: 8px;
+        }
+        // @include mquery( "pc" ) { .blkInfo:nth-of-type(2) { width: 34%; } }
+        @include mquery( "mb" ) { .blkInfo:nth-of-type(2) { margin-top: 20px; /* border: 1px solid red; */ } }
+      }
+
+      @include mquery( "pc" ) {
+        .extLink             { margin:     20px 0 20px 100px; }
+        .extLink:first-child { margin-top: 50px !important; }
+      }
+      // .marginT70 { margin-top: 70px; }
+
+      h4 {
+        width: 70%;
+        @include mquery( "mb" ) { width: 90%; }
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  // 最優先設定事項！
+  ul {
+    // border: 2px dashed red;
+    margin: 15px 0 15px 30px;
+                              li { font-size: $articleULCharSize; line-height: 1.5em;}
+    @include mquery( "mb" ) { li { font-size: $articleULCharSizeMB;
+                                   margin-left: 0;          // 15px;
+                                  } }
+  }
+
+}
+

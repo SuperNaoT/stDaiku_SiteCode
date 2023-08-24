@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+// 
+// 各種値、定義変数格納ファイル
+@import "../../com/defaultStyle";
+
+//
+// **************************************************
+// **************************************************
+// **************************************************
+//                                                   
+// ■ WordPress 個別投稿記事構成ブロック用各種設定
+// 　（投稿ページ本体：single.php）
+//                                                   
+// **************************************************
+// **************************************************
+// **************************************************
+//
+
+@include mquery("mb") { .dspPC { display: none; } }     //　NTAD 20220617
+@include mquery("pc") { .dspMB { display: none; } }
+
+// .blockEditor-displayNone {
+// 
+// ■ 投稿アーカイブ一覧表示時利用、アイキャッチ画像
+// 　ページ本体では非表示設定
+.WP-blkDisplayNone {
+  display: none;
+}
+  
+// .heading-primary-red {
+// 
+// ■ 投稿ページ、メインタイトル用設定
+// ■ 投稿ページ、メインタイトル用設定
+.WP-mainTitleDef::before {
+  content: "■";
+  margin-right: 5px;
+}
+.WP-mainTitleDef {
+  margin: 50px 0 20px 0;
+                            font-size: $WPBlkTitleCharSize   !important;
+  @include mquery( "mb" ) { font-size: $WPBlkTitleCharSizeMB !important; padding-bottom: 5px;}
+  color:    red !important;
+  color:    gold !important;
+  text-shadow: 1px 1px 0 #333, -1px -1px 0 #333,
+              -1px 1px 0 #333,  1px -1px 0 #333,
+               0px 1px 0 #333,  0   -1px 0 #333,
+              -1px 0   0 #333,  1px 0    0 #333;
+  padding-left: 20px;
+  border-bottom: 2px gold solid;
+  line-height: 1.1em;
+}
+
+// 
+// ■ 投稿ページ、ドットボーダー用設定
+.WP-dotsBorderDef {
+  font-weight: bold;
+}
+
+// 
+// ■ 投稿ページ、メイン画像用設定
+.WP-mainImageDef {
+  // width: 80%;
+  max-width: 80%;
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+// 
+// ■ 投稿ページ、メイン画像用設定・マージン上設定あり
+.WP-mainImageDefMgn {
+  // width: 80%;
+  max-width: 80%;
+  width: fit-content;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  border-radius: 20px;
+  overflow: hidden;
+  
+  margin-top: 30px;
+}
+
+// 
+// ■ 投稿ページ、投稿本文用設定
+// .blockEditor-paragraph {
+.WP-blkParagraphStrDef {
+  color: #333;
+  font-family: 'M PLUS Rounded 1c', 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, sans-serif;
+
+  line-height: 1.5em;
+                            font-size: $articleCharSize;
+  @include mquery( "mb" ) { font-size: $articleCharSizeMB; }
+  
+  padding: 20px 0 20px 30px;
+  @include mquery( "mb" ) { padding-left: 10px; }
+  // padding-left: 30px;
+}
+
+// 
+// ■ 投稿ページ、投稿本文用設定・マージン上下設定あり
+.WP-blkParagraphStrDefMgn {
+  color: #333;
+  font-family: 'M PLUS Rounded 1c', 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, sans-serif;
+
+  line-height: 1.2em;
+                            font-size: $articleCharSize;
+  @include mquery( "mb" ) { font-size: $articleCharSizeMB; }
+  @include mquery( "pc" ) { width: 85%; }
+  
+  padding: 20px 0 20px 30px;
+  @include mquery( "mb" ) { padding-left: 15px; }
+
+  // margin-top:    30px;
+  // margin-bottom: 30px;
+  margin: 30px auto;
+
+  // border: 2px dashed red;
+}
+  
+// 
+// ■ 投稿ページ、ギャラリー説明タイトル用設定
+// .heading-primary {
+.WP-secondTitleDef::before {
+  content: "》";
+  margin-right: 5px;
+}
+  
+.WP-secondTitleDef {
+  margin: 50px 0 20px 0;
+                            font-size: $WPBlkScndTitleCharSize   !important;
+  @include mquery( "mb" ) { font-size: $WPBlkScndTitleCharSizeMB !important; }
+  color: #fffafa !important;
+  color: red !important;
+  text-shadow: 1px 1px 0 #333, -1px -1px 0 #333,
+              -1px 1px 0 #333,  1px -1px 0 #333,
+               0px 1px 0 #333,   0  -1px 0 #333,
+              -1px 0   0 #333,  1px 0    0 #333;
+  padding-left: 30px;
+  line-height: 1.1em;
+}
+
+// 👆 $articleCharSize 16px
+// .blockEditor-marginTopBottom20 {
+//   margin-top:    20px;
+//   margin-bottom: 20px;
+// }
+
+// 
+// ■ 投稿ページ、画像ギャラリー用設定
+.WP-gallaryImgsDef {
+  figure {
+    border: 1px solid blue;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+// 
+// ■ 投稿ページ、画像ギャラリー用設定・マージントップ設定あり
+.WP-gallaryImgsDefMgn {
+  margin-top:    30px;
+  margin-bottom: 50px;
+  figure {
+    border: 1px solid blue;
+    border-radius: 20px;
+    overflow: hidden;
+    width:fit-content;
+  }
+}
+
+
+// 
+// ■ 投稿ページ、動画要素用設定・マージン上設定あり
+.WP-movieDefMgn {
+  height: 300px;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+

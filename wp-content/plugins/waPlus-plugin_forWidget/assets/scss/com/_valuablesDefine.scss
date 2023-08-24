@@ -1,0 +1,115 @@
+@charset "utf-8";
+// 
+// ***********************************************
+// ***********************************************
+// ***********************************************
+// ★ 共通利用値定義
+// ***********************************************
+// 画面最大有効幅
+$areaMaxWidth: 1200px;        // 1170px;
+
+// 
+// *********************************************
+// *********************************************
+// 個別固定ページ、アニメーションタイトル文字サイズ設定
+// *********************************************
+// 投稿記事、メインタイトル文字サイズ
+$animateTitleCharSize:   42px;
+$animateTitleCharSize:   2.56vw;    // 画面調整用　2022/11/02
+$animateTitleCharSize:   clamp(21px, 2.56vw, 42px);  // 画面調整用　2022/11/02
+
+$animateTitleCharSizeMB: 20px;
+
+// 
+// 各セクション内メインタイトルカラー
+$informationTitleColor: rgba(102,90,26, 1);
+
+// 各セクション内表示領域設定・セクション外周幅
+$sectionPaddingWidth: 50px;
+
+// ボタン背景色設定
+$btnBgColor: rgba(70,118,215,0.7);
+$btnHoverBgColor: aquamarine;
+
+// 
+// *********************************************
+// *********************************************
+// WP投稿記事内ブロック用各種設定
+// *********************************************
+// 投稿記事、メインタイトル文字サイズ
+// $WPBlkTitleCharSize:   36px;
+// $WPBlkTitleCharSizeMB: 28px;
+
+$WPBlkTitleCharSize:   30px;
+$WPBlkTitleCharSize:   1.8vw;
+$WPBlkTitleCharSize:   clamp( 15px,1.8vw, 30px);
+
+$WPBlkTitleCharSizeMB: 25px;
+
+// 投稿記事、サブタイトル文字サイズ
+$WPBlkScndTitleCharSize:   24px;
+$WPBlkScndTitleCharSize:   1.5vw; // 1.5vw;    // 画面調整用　2022/11/02　★要確認
+$WPBlkScndTitleCharSize:   clamp(14px,1.5vw,24px); // 1.5vw;    // 画面調整用　2022/11/02　★要確認
+
+$WPBlkScndTitleCharSizeMB: 20px;
+
+// *********************************************
+// *********************************************
+
+// 記事内各種文字サイズ設定
+// タイトル「H4/H5」文字列
+$articleTitleCharSize:   18px;
+$articleTitleCharSize:   clamp(14px,1.12vw,18px);
+// $articleTitleCharSize:   1.12vw;
+
+$articleTitleCharSizeMB: 16px;
+
+// サブページ内ページ上部概要説明文字列、文字サイズ設定
+$pageExpCharSizePC: 18px;
+$pageExpCharSizePC: 1.12vw;
+$pageExpCharSizePC: clamp(14px,1.12vw,18px);
+
+$pageExpCharSizeMB: 14px;
+
+// 一般説明文字列、文字サイズ設定
+$articleCharSize:   16px;
+$articleCharSize:   1vw;
+$articleCharSize:   clamp(12px,1vw,16px);
+
+$articleCharSizeMB: 14px;
+
+// ULリスト内大き目文字列
+$articleULCharSize:   17px;
+$articleULCharSize:   1.05vw;
+$articleULCharSize:   clamp(12px,1.05vw,17px);
+
+$articleULCharSizeMB: 14px;
+
+// 
+// ***********************************************
+// ***********************************************
+// header.php 定義要素、各種文字サイズ設定
+// ***********************************************
+// ***********************************************
+// 
+// ヘッダー部内、ヘッドラインタイトル
+$headerH1FSize:         0.95vw;   // 16px
+$headerH1FSize:         clamp(12px,0.95vw,16px);   // 16px
+// ヘッダー部内、本社作業場アドレス
+$headerH2FSize:         0.85vw;   // 14px
+$headerH2FSize:         clamp(12px,0.85vw,14px);   // 14px
+
+// ヘッダー部内、各文言文字サイズ
+$headerEachInfoFSize:   0.85vw;   // 14px
+$headerEachInfoFSize:   clamp(12px,0.85vw,14px);   // 14px
+
+// 電話番号ボタン内文字サイズ
+$headerCallBtnFSize:    1.25vw;   //1.5em
+$headerCallBtnFSize:    clamp(14px,1.25vw,1.5em);   //1.5em
+// お問い合わせボタン内文字サイズ
+$headerContactBtnFSize: 0.85vw;   // 14px
+$headerContactBtnFSize: clamp(12px,0.85vw,14px);   // 14px
+
+// メインナビゲーションメニュー・文字サイズ
+$headerNavigationMenuFSize: 0.9vw;    // 15px
+$headerNavigationMenuFSize: clamp(12px,0.9vw,15px);    // 15px

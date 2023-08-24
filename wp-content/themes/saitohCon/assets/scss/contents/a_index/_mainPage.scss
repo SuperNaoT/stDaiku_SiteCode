@@ -1,0 +1,593 @@
+@charset 'utf-8';
+
+// 
+// ***********************************************
+// ***********************************************
+// 和Plus サイト本体記述
+// ***********************************************
+// ***********************************************
+
+// 
+// 左側ペイン
+// Twitter、ギャラリーボタン
+#sidebar {
+  margin: 10px 10px;
+  margin-top: 0;
+  @include mquery( "mb" ) { width: 90%; margin: 0 auto; } //margin-bottom: 30px; }
+  @include mquery( "pc" ) { width: 30%; }
+
+  // border: 2px solid lime;
+
+  .twitterPackage {
+
+    // 
+    // ページスクロールし易くする為に、幅を縮小
+    @include mquery( "mb" ) { width: 90%; margin: 0 auto; }
+
+    .twitterArea { 
+      @include mquery( "mb" ) { width: 95%; }
+    }
+
+    height: 725px;
+    border: 1px solid rgba(102,90,26, 1);           // NTad 2px
+    border-radius: 8px; 
+    padding: 10px;
+    background-color: rgba(85,121,155,0.2);
+
+    .infoTitle { @include style-infoTitle( $informationTitleColor  ); }
+  }  
+}
+
+// 
+// サイトヘッダー（ロゴ・ナビゲーションメニュー）部設定
+// ***********************************************
+// ***********************************************
+.mainContents {
+
+  @include mquery("mb") { .dspPC { display: none; } }     //　NTAD 20220617
+  @include mquery("pc") { .dspMB { display: none; } }
+
+  // 
+  // **************************************************
+  // **************************************************
+  // 各セクション、共通設定部
+  // **************************************************
+  // **************************************************
+  #section-1, #section-1-2, #section-2, #section-3, #section-4, #section-5 {
+    @include style-sectionDef();
+  }
+
+  // **************************************************
+  // **************************************************
+
+  // 
+  // **************************************************
+  // **************************************************
+  // 以下、セクション単位での固有設定
+  // **************************************************
+  // **************************************************
+  #section-1 {
+
+    background-color: #FEF9FA;
+
+    @include mquery( "pc" ) { padding-top: 5px; }
+    @include mquery( "mb" ) { padding:  25px 0; }
+    // border: 1px solid red;
+
+    // 
+    // ★★★ スライドショー画像ロードに時間が掛かる。
+    // ★★★ ここで、ダミーのセクション高を入れとかないと、
+    // ★★★ 以下のRellax効果付画像の位置がズレる。
+    // height: 90vh;
+
+    // 
+    // アニメーション・サイト訪問者への、挨拶バナー
+    // ***************************
+    .greeting-area {
+      @include style-greetingArea-wrapper();
+      margin: 0;
+    }
+    
+    // 
+    // スライドショー定義
+    // ***************************
+    .slideShow-Style {
+      @include style-slideShow;
+      @include mquery( "pc" ) { margin-top: 1px; margin-left: -5px; margin-right: 0; }
+      @include mquery( "mb" ) { margin: 15px 10px; }
+      position: relative;
+
+      .slides li picture {
+        object-fit: cover;
+      }
+      .mainLogoArea {
+        // opacity: 0;
+        // transition-duration: 5s;
+
+        .backGndMask {
+          width:  100%;
+          height: 100%;
+          z-index: 8;
+          
+          position: absolute;
+          top:  0;
+          left: 0;
+  
+          background: linear-gradient(90deg,  rgba( 169, 169, 169, 0.0 ) 0%,
+                                              rgba( 169, 169, 169, 0.0 ) 15%,
+                                              rgba( 169, 169, 169, 0.3 ) 35%,
+                                              rgba( 169, 169, 169, 0.5 ) 50%,
+                                              rgba( 169, 169, 169, 0.3 ) 65%,
+                                              rgba( 169, 169, 169, 0.0 ) 85%,
+                                              rgba( 169, 169, 169, 0.0 ) 100% ),
+                      linear-gradient(180deg, rgba( 169, 169, 169, 0.0 ) 0%,
+                                              rgba( 169, 169, 169, 0.0 ) 15%,
+                                              rgba( 169, 169, 169, 0.3 ) 35%,
+                                              rgba( 169, 169, 169, 0.5 ) 50%,
+                                              rgba( 169, 169, 169, 0.3 ) 65%,
+                                              rgba( 169, 169, 169, 0.0 ) 85%,
+                                              rgba( 169, 169, 169, 0.0 ) 100% );
+        }
+        .companyLogo {
+          width:  800px;
+          height: 209px;
+          @include mquery( "mb" ) {
+            width:  300px;
+            height: 78px;  
+          }
+          z-index: 9;
+          border-radius: 10px;
+          opacity: 0.7;
+  
+          position: absolute;
+          top: 50%;
+          left: 50%;
+  
+          transform: translate( -50%, -60% );   // -50%, -80%
+  
+          background-size:     cover;
+          background-position: center;
+          background-repeat:   no-repeat;  
+          background-image:    url( "../../../../Images/Takumi_LogoName_Main_WB.png" );                      
+        }        
+      }
+    }
+  }
+
+  // 
+  // *************************************************
+  // *************************************************
+  // Twitter・他、ご挨拶セクション
+  // *************************************************
+  // *************************************************
+  #section-2, #section-1-2 {
+
+    // 
+    // メニューボタン、当セクション固有配置設定
+    .sideMenu {
+      background-color: #FEF9FA;
+      @include mquery( "pc" ) { width:  100%; }                // height: 30vh; 55vh;
+
+      h4 {
+        font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+        line-height: 1.5em;
+        margin: 30px auto;
+        padding: 0 10px !important;
+      }
+
+      height: auto;
+      margin-top: 30px;  // 50px;
+      padding: 10px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      
+      @include style-catMenuBtn( 80% );
+      .menuBtn { margin-left: 10% !important; }
+      .menuBtn:first-child {
+        margin: 0 10% 8px 10% !important;
+      }
+      .menuBtn:not(:first-child) {
+        margin: 8px;
+        margin-left: 10%;
+      }
+    }
+
+    // 
+    // 右側ペイン
+    // ご挨拶文章・「齋藤工」スライドショー
+    .rightArea {
+      margin: 0 10px 10px 0;
+
+      @include mquery( "mb" ) {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+      @include mquery( "pc" ) {
+        width: 70%;  
+      }
+
+      // 
+      // セクション２には、ご挨拶・何が出来るの？２件の記事有り
+      .infoArea:not(:first-child) {
+        margin-top: 30px;
+      }
+
+      // .newsArea {
+      .infoArea {
+
+        // 
+        // スライドショー定義
+        // ***************************
+        .slideShow-Style {
+          @include style-slideShow;
+
+          // 
+          // TAKUMIさんのスライドショーは、上下丸目
+          border-top-right-radius: 50% 40px;
+          border-top-left-radius:  50% 40px;  
+
+          border: 2px solid lime;
+
+          @include mquery( "pc" ) { 
+            // width:  300px;
+            // height: 350px;
+            max-width:  300px;
+            max-height: 350px;
+            height: 100%;
+
+            margin: 0 0 20px 10px;
+          }
+          img { width: 120%; height: 120%; transform: scale(1.2); } 
+
+          .overlapArea {
+            position: absolute;
+            @include mquery( "mb" ) { top: 5vh; left: 3vw; }               // 22vh
+            @include mquery( "pc" ) { top: 5vh; left: 0vw; }               // 5vh
+            p {
+              @include mquery( "mb" ) { font-size: 3.5vw; }
+              @include mquery( "pc" ) { font-size: 0.8vw; }
+            }        
+          }
+        }
+
+        .rlxParentElmW {
+          .rlxImgFrameW {
+
+            // 
+            //【.rlxImgCfgH】画像そのものの大きさに因り、
+            //  親要素の高さが決まる！
+            // ****************************************
+  
+            border: 2px dashed lime;       // for DEBUG!
+  
+            @include style-rlxImgFrame( -10% );
+  
+            // 
+            // 縦長親領域対応、中心線移動処理
+            // 中心部分を、左方向にだけ移動する。
+            position: absolute;
+            left: -3%;
+            border: none;
+  
+                        //  left: -160%;                // -250%;          // -150%;
+  
+            .rlxImgCfgW {
+  
+              // 
+              // 背景で動く画像のサイズを決める。
+              // 記事の量に因り「親領域が縦長に成る程」、
+              // この画像の高さを大きくして埋める必要が有る！
+              // height: 50%;
+              object-fit: cover;
+              width: auto;
+            }
+          }   
+        }
+      }
+    }
+  }
+  // 
+  // ご挨拶セクション内「rellax効果」画像設定
+  // 1．背景画像（工具箱）
+  #section-2 {
+
+    // 背景色設定
+    background-color: rgba(192,218,239,0.2);
+
+    // .rlxParentElmW {
+    //   border: 2px solid blueviolet;       // for DEBUG!
+    //   background-color: blueviolet;       // for DEBUG!
+    // }
+
+    // 
+    // 当該セクション「背景画像の拡大率」を、
+    // 初期値から変更
+    .rlxImgFrameW {
+
+      /*************************************************
+        ■【祖父枠要素】に対し「はみ出したサイズ」の、
+        【父枠要素】サイズをここで決める。
+    
+          pallax効果にて【父枠要素】は「上下」に移動する。
+          従って、
+        【父枠要素】のサイズは
+        【祖父枠要素】のサイズを大きくはみ出ないと、
+          空白が出てしまう。
+          
+          ★「扱う画像の縦横比」（個別調整）
+            １．横広画像は、横サイズ「width:200%」を設定
+            ２．縦広画像は、縦サイズ「height:200%」を設定
+          ★「速度：data-rellax-speed」
+            １．早ければ、大きくする必要有り
+            ２．遅ければ、100% 以上、比較的小さい範囲設定も可
+      *************************************************/
+      width:  auto;
+      height: 120%;                             // default：250%;
+      @include style-rlxImgFrame( -10% );       // default：-80%;
+    
+      // opacity: 0.5;         // for DEBUG
+    }      
+  }
+
+  #section-3 {
+    .infoArea {
+      .sBysBlk {
+        .sideMenu {
+
+          @include mquery( "mb" ) {
+            .rlxImgFrameH {
+              @include style-rlxImgFrame( -40% );
+              .rlxImgCfgH {   
+                // 
+                // 背景で動く画像のサイズを決める。
+                // 記事の量に因り「親領域が縦長に成る程」、
+                // この画像の高さを大きくして埋める必要が有る！
+                width: 100%;         // 120vw
+                height: auto;  
+                object-fit: cover;
+                // border: 2px dashed blue;
+              }
+            }  
+          }
+          @include mquery( "pc" ) {
+
+            // 
+            // お家の健康診断セクション内「rellax効果」画像設定
+            // 1．アクセント画像（聴診器画像）
+            .rlxParentElmH {
+              // border: 2px dashed lime;
+              .rlxImgFrameH {
+                top: -10%;
+                // border: 2px dashed red;
+              }
+            }  
+          }      
+        }
+      }
+    }
+  }
+  
+  // 
+  // *************************************************
+  // *************************************************
+  // ■ 下記3セクション、共通表示用定義
+  // section-3：■お家の新築/設計
+  // section-4：■お家のリフォーム
+  // section-5：■お家の健康診断
+  // *************************************************
+  // *************************************************
+  #section-3, #section-4, #section-5 {
+
+    .infoArea {
+      .sBysBlk {
+        .blkInfo {
+          width: 60%;
+          // padding-bottom: 20px;
+          @include mquery( "mb" ) {
+            width: 100%;
+            ul {
+                   margin-left: 10px;
+              li { margin-left: 10px; }
+            }
+          }
+          @include mquery( "pc" ) {
+            p  { margin-left: 50px; line-height: 1.5em; }
+            ul {
+                   margin-left: 50px;
+              li { margin-left: 30px; }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 
+  // *************************************************
+  // *************************************************
+  // ■ 表示用定義
+  // section-4：■お家のリフォーム
+  // *************************************************
+  // *************************************************
+  #section-4 {
+    background-color: #FEF9FA;
+  
+    .infoArea {
+      
+      // 
+      // お家のリフォームセクション内「rellax効果」画像設定
+      // 1．アクセント画像（店舗内パネル展示画像）
+      .rlxParentElmW {
+        .rlxImgFrameW {
+
+          // 
+          //【.rlxImgCfgH】画像そのものの大きさに因り、
+          //  親要素の高さが決まる！
+          // ****************************************
+          // border: 2px dashed lime;       // for DEBUG!
+
+          @include style-rlxImgFrame();
+
+          height: 200%;
+
+          // 
+          // 縦長親領域対応、中心線移動処理
+          // 中心部分を、左方向にだけ移動する。
+          position: absolute;
+          top:  -40%;
+          left: -40%;
+          @include mquery( "mb" ) {
+            height: 250%;
+            top:    -70%;
+            left:   -70%;
+          }
+
+          .rlxImgCfgW {
+
+            // 
+            // 背景で動く画像のサイズを決める。
+            // 記事の量に因り「親領域が縦長に成る程」、
+            // この画像の高さを大きくして埋める必要が有る！
+            height: 100%;
+            object-fit: cover;
+            width: auto;
+          }
+        }   
+      }
+    }
+  }
+    
+  // 
+  // *************************************************
+  // *************************************************
+  // ■ 表示用定義
+  // section-5：■お家の健康診断
+  // *************************************************
+  // *************************************************
+  #section-5 {
+    @include mquery( "pc" ) {
+
+      // 
+      // お家の健康診断セクション内「rellax効果」画像設定
+      // 1．アクセント画像（聴診器画像）
+      .rlxParentElmH {
+        .rlxImgFrameH {
+          top: -10%; // -35%;
+        }
+      }  
+    }
+  }
+
+  // 
+  // *************************************************
+  // *************************************************
+  // ■ 表示用定義
+  // section-1-2：■ 新着ニュース表示セクション
+  // *************************************************
+  // *************************************************
+  #section-1-2 {
+
+    @include style-postInfoAtList( 60px );
+
+    // 
+    // 新着ニュース、
+    // 個別記事ブロック、サンバーストカラーを設定
+    .blkInfo {
+      background: linear-gradient(to right, #00ffff4d, rgba(0,255,255,0));
+      background: linear-gradient(to right, rgba(255,0,0,0.3), rgba(0,255,255,0));
+      background: linear-gradient(to right, rgba(255,255,0,0.5), rgba(0,255,255,0));
+    }          
+
+    // 20220909 ******************************
+    // 
+    // ■ 背景画像rellax効果用設定
+    // **************************
+    .rlxParentElmBG { margin: 0; }
+    // 
+    // ■ PC画面表示用
+    // 当該セクション「背景画像の拡大率」を、
+    // 初期値から変更
+    .rlxImgFrameW {
+      width:  110%;
+      height: auto;                           // default：250%; 120%
+      @include style-rlxImgFrame( -5% );       // absolute; -10%;
+                                 top: -120%;     // -30%;
+      @include mquery( "mb" )  { top: -45%; }
+      opacity: 0.5;         // for DEBUG
+
+      // border: 2px dashed lime;
+    }
+
+    @include mquery( "pc" ) {
+      // 
+      // アニメーションイメージ画像「神宮スコアボード裏、太陽光燦燦と・・・」
+      .expImage {                   // ★★★★
+        // @include style_ourPfmRellaxImage( 0, 0, 50%, 50%, 0% );
+        @include style_ourPfmRellaxImage( -60%, 0%, 100%, 200%, 0% );
+        // border: 2px dashed red;
+      }
+    }
+  }
+
+  
+  // 
+  // *************************************************
+  // *************************************************
+  // ■ 下記3セクション、
+  //   モバイルデバイス表示
+  // 　　背景画像「rellax効果」設定
+  // section-2：■ ご挨拶
+  // section-3：■ お家の新築/設計
+  // section-5：■ お家の健康診断
+  // *************************************************
+  // *************************************************
+  #section-2, #section-3, #section-5 {
+
+    // 
+    // 【pallax効果】「rellax」ライブラリ利用、
+    //  ■ Mobileデバイス利用時の設定
+    .rlxBGBaseArea {
+      position: relative;
+      overflow: hidden;
+
+      @include mquery( "mb" ) {
+
+        width:  90%;
+        margin: 50px auto;
+
+        border: 1px solid #333;
+        border-radius: 8px;
+
+        .rlxParentElmBG {
+
+          // border: 2px solid blueviolet;       // for DEBUG!
+          // background-color: blueviolet;       // for DEBUG!
+
+          .rlxImgFrameH {
+            @include style-rlxImgFrame( -3% );
+            // 
+            // 縦長親領域対応、中心線移動処理
+            // 中心部分を、左方向にだけ移動する。
+            // position: absolute;
+            // left: -10%;                // -250%;          // -150%;
+                          top: 0;
+
+            // border: 2px dashed red;
+
+            .rlxImgCfgH {   
+              // 
+              // 背景で動く画像のサイズを決める。
+              // 記事の量に因り「親領域が縦長に成る程」、
+              // この画像の高さを大きくして埋める必要が有る！
+                            width: 120vw;
+                            height: auto;
+              object-fit: cover;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

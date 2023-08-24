@@ -1,0 +1,360 @@
+@charset 'utf-8';
+
+// // 
+// // ヘッダー部内、ヘッドラインタイトル
+// $headerH1FSize:         0.95vw;   // 16px
+// // ヘッダー部内、本社作業場アドレス
+// $headerH2FSize:         0.85vw;   // 14px
+
+// // ヘッダー部内、各文言文字サイズ
+// $headerEachInfoFSize:   0.85vw;
+
+// // 電話番号ボタン内文字サイズ
+// $headerCallBtnFSize:    1.25vw;
+// // お問い合わせボタン内文字サイズ
+// $headerContactBtnFSize: 0.85vw;
+
+//
+// ***********************************************
+// ★ サイトヘッダー セクション
+// ***********************************************
+// 
+// サイトヘッダー（ロゴ・ナビゲーションメニュー）部設定
+// ***********************************************
+// ***********************************************
+// 
+.siteHeader {
+
+  background-color: #f6f6f6;
+  color: #333;
+
+  // border: 2px solid red;       // for DEBUG!
+
+  width: 100%;
+
+  // 
+  // ■ 表示位置固定、文字列フロー型バナー表示設定
+  // 　１．フッター部表示
+  // 　２．モバイル表示時、ページトップ位置に固定のバナー表示
+  // *********************************************************
+  .fixed-greeting-area {
+    position: fixed;
+    top:  0;
+    left: 2vw;
+    z-index: 9;
+    @include style-greetingArea();
+    width: 94vw;
+    border: 1px solid blue;
+    border-radius: 8px;
+    // @include mquery( "mb" ) { margin-bottom: 10px; }
+    @include mquery( "pc" ) { display: none; }
+    transition-duration: 5s;
+    opacity: 0.8;
+  }
+  
+  // 
+  // ■ ヘッダー部、インフォーメーション表示要素ラッパー
+  // 　１．固定PR文字列
+  // 　２．会社ロゴ
+  // 　３．会社住所
+  // 　４．会社営業時間
+  // 　５．定休日
+  // 　６．電話・問合せフォームボタン
+  // *******************************************************
+  .headInformation {
+
+    background-color: rgba(192,218,239,0.7);
+                              padding: 30px 0 30px 0;
+    @include mquery( "mb" ) { padding-bottom: 40px; }
+
+    // 固定PR文字列
+    .greeting {
+      @include mquery( "pc" ) { margin-bottom: 10px; text-align : center; }
+
+      // 構成文字列、詳細設定
+      h1, h2 {
+        font-size: 16px;
+        @include mquery( "pc" ) { font-size: $headerH1FSize; }
+
+        font-weight: 700;
+        line-height: 2.5em;
+        @include mquery( "mb" ) { padding: 10px 0 0 40px; font-size: 14px; };
+        // @include mquery( "pc" ) { padding: 10px 0 0 10px; };
+        @include mquery( "pc" ) { padding-left: 10px; };
+        // color: black;
+        color: rgb(102,90,26);
+      }
+      @include mquery( "mb" ) { display: none; }
+    }
+
+
+    // 
+    // ■ 固定PR文字列配下、会社ロゴ・中央・右側
+    // **************************************
+    .headArea {
+
+      @include mquery( "mb" ) { display: block; }
+      @include mquery( "pc" ) { display: flex;  }
+  
+      // 
+      // ■ ヘッダー表示領域・左側
+      // 　１．会社ロゴ
+      // 　２．会社住所
+      // *********************
+      .headAreaL {
+        @include mquery( "mb" ) { width: 100%; }
+        @include mquery( "pc" ) { width:  40%; }      // 44%
+
+        // border: 2px solid lime;       // for DEBUG!
+  
+        // 　１．会社ロゴ
+        .headerLogo img, .headerLogoNL img {
+          // .siteHeaderLogo img, .siteHeaderLogoNL img {
+            @include mquery( "mb" ) { margin: 100px 30px 10px 10px; width: 90vw; }; // top 20px;
+            // @include mquery( "pc" ) { margin-top: 10px; margin-bottom: 10px; width: 95%; };       // width: 30vw
+            @include mquery( "pc" ) { margin: 10px 0 10px 3%; width: 95%; };       // width: 30vw
+            transition: transform 500ms;
+          // }
+          // .siteHeaderLogo:hover {
+          //   transform: scale(1.05);
+          // }
+        }
+        .headerLogo:hover {
+          transition: transform 500ms;
+          transform: scale(1.05);
+        }
+
+        // 　２．会社住所
+        h2 {
+          font-size: 14px;
+          @include mquery( "pc" ) { font-size: $headerH2FSize; }
+
+          font-weight: 700;
+          @include mquery( "mb" ) { padding: 10px 0 0 40px; };
+          @include mquery( "pc" ) { padding: 10px 0 0 10px; margin-left: 5%; };
+          color: black;
+          // color: rgb(102,90,26);
+        }
+        // .dspPC { @include mquery( "mb" ) { display: none; } }
+        // .dspMB { @include mquery( "pc" ) { display: none; } }
+      }
+
+      // 
+      // ■ ヘッダー表示領域・中央
+      // 　１．営業時間
+      // 　２．休業日
+      // *********************
+      .headAreaC {
+        margin-top: 30px;
+        @include mquery( "mb" ) { width: 100%; padding-left: 30px; margin: 50px 0 15px 0; }
+        // @include mquery( "pc" ) { width:  26%; padding: 10px 0; }       // width: 26%
+        @include mquery( "pc" ) { width:  26%; padding: 10px 0; margin-left: 1%;}       // width: 26%
+
+        // border: 2px dashed red;
+
+        // 営業時間・休業日ラッパー
+        .openInfo {
+          display: flex;
+          padding-left: 10px;
+          font-size: 14px;
+          @include mquery( "pc" ) { font-size: $headerEachInfoFSize; }
+          font-weight: 600;
+
+          // 「営業時間」見出し矩形表示設定
+          .openTime {
+            width: 22%;
+            height: 30%;
+            text-align: center;
+            line-height: 40px;
+            font-family: 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+            color: white;
+            background-color: rgba(85,121,155,1);
+            border-radius: 3px;
+          }
+
+          // 「休業日」見出し矩形表示設定
+          .dayOff {
+            width: 22%;
+            height: 30%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+            @include mquery( "pc" ) { font-size: $headerEachInfoFSize; }
+
+            font-weight: 600;
+            font-family: 游ゴシック体, "Yu Gothic", YuGothic, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+            color: white;
+            background-color: rgba(85,121,155,1);
+            border-radius: 3px;
+            margin-top: 3px;
+          }
+
+          // 実際の営業時間・休業日情報表示設定
+          .detailTMInfo {
+            display: block;
+            .detailOT1, .detailOT2 {
+              letter-spacing: 0em;
+              line-height: 20px;
+              margin-left: 5px;
+            }
+            .detailOT1 {
+              padding-top: 3px;
+            }
+            .detailDO {
+              line-height: 45px;
+              margin-left: 5px;
+            }
+          }
+        }
+
+        // border: 1px solid lime;       // for DEBUG!
+      }
+
+      // 
+      // ■ ヘッダー表示領域・右側
+      // 　１．電話番号ボタン表示
+      // 　２．お問い合わせ・相談ボタン表示
+      // *********************
+      .headAreaR {
+
+        // border: 2px dashed blueviolet;
+
+        @include mquery( "mb" ) { width: 100%; padding-left: 13px; margin: 50px 0 15px 0; }   // **************
+        @include mquery( "pc" ) { width:  30%; padding: 10px 10px; margin-right: 3%; }       // 26%
+        
+        font-size: 14px;
+        @include mquery( "pc" ) { font-size: $headerEachInfoFSize; }
+
+        font-weight: bold;
+
+        // 「お気軽にお問い合わせ」「メールでの」タイトル表示設定
+        p {
+          @include mquery( "mb" ) { margin: 10px 0 10px 10px; }
+          @include mquery( "pc" ) { margin: 15px 0 5px 10px; }
+        }
+        p:first-child {
+          @include mquery( "mb" ) { margin: 0 0 5px 10px; }
+          @include mquery( "pc" ) { margin: 0 0 5px 10px; }
+        }
+        p:nth-of-type(2) {
+          @include mquery( "mb" ) { display: none; }
+        }
+
+        // 「電話＃」「コンタクトフォーム」ボタン、表示設定
+        .phoneNo, .contactInfo {
+          font-size: 1.5em;             // ★
+          @include mquery( "pc" ) { font-size: $headerCallBtnFSize; }
+
+          letter-spacing: -0.1em;
+          color: white;
+          background-color: rgba(85,121,155,0.8);
+          background-color: $btnBgColor;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @include mquery( "mb" ) { width: 95%; line-height: 1.7em; };
+          @include mquery( "pc" ) { padding: 10px 10px; }
+
+          transition: 500ms;
+
+          border: 1px solid #333;
+          border-radius: 5px;
+
+          // 赤電話ロゴマーク
+          .phoneIcon { 
+            margin-right: 5px;
+            @include mquery( "mb" ) { width: 26px; }
+            @include mquery( "pc" ) { width: 28px; }
+          }
+          // 電話番号文字列設定
+          p { margin: 0 0; margin-top: 2px; }
+        }
+
+        // 「コンタクトフォーム」ボタン、ボタンラベル文字列表示設定
+        .contactInfo {
+          font-size: 14px;             // ★
+          @include mquery( "pc" ) { font-size: $headerContactBtnFSize; }
+          line-height: 2.2em;
+          @include mquery( "mb" ) { line-height: 2.8em; margin-top: 17px; }    // 2.7em 7px
+          letter-spacing: 0.01em;
+        }
+        // 「コンタクトフォーム」ボタン、マウスHOVER時表示設定
+        .contactInfo:hover {
+          color:rgba(102,90,26,1);
+
+          @include mquery( "mb" ) {
+            color: yellow;
+            transform: scale(1.02);
+          }
+          @include mquery( "pc" ) {
+            color: #333;
+            background-color: $btnHoverBgColor;
+          }
+        }
+        // 「電話＃」ボタン、マウスHOVER時表示設定
+        .phoneNo:hover {
+
+          color:rgba(102,90,26,1);
+
+          @include mquery( "mb" ) {
+            color: yellow;
+            transform: scale(1.02);
+          }
+          @include mquery( "pc" ) {
+            color: #333;
+            background-color: $btnHoverBgColor;
+          }
+        }
+        
+        .faClkHand {
+          @include style-fontAwsClickHand( red, 14px );
+        }
+        
+        // border: 1px solid lime;       // for DEBUG!
+      }  
+    }
+  }
+
+  // 
+  // ナビゲーションメニュー
+  .navMenuArea { @include style-navMenuBar; }
+
+  // 
+  // レスポンシヴ・ハンバーガーメニュー
+  .hamburgerMenu-Wrapper {
+    @include mquery( "mb" )  { display: block; }
+    @include mquery( "pc" )  { display:  none; }
+
+    .hamburgerMenuButton:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+
+.fixedSiteHeader {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  // background-color: #f6f6f6;
+  color: #333;
+  opacity: 0;
+  visibility: hidden;
+
+  // border: 2px solid red;       // for DEBUG!
+
+  z-index: 9;
+
+  // 
+  // ナビゲーションメニュー
+  .fixedNavMenuArea { @include style-fixedNavMenuBar; }
+
+  transition-duration: 3s;
+
+}

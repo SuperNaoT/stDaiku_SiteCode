@@ -1,0 +1,299 @@
+@charset 'utf-8';
+
+// 
+// ***************************************************
+// ***************************************************
+// ***************************************************
+//                                                    
+// ■ 月別アーカイブリスト表示時、利用される定義
+// 　1. 【sidebar-archiveList.php】上リストクリック時、呼出される
+// 　1.-1 【 archiveListDspCtr.php：　　　月別投稿概要一覧リスト表示】、
+// 　1.-2 【categoryListDspCtr.php：カテゴリ別投稿概要一覧リスト表示】の設定
+// 
+// 　（投稿概要一覧リストページ本体表示設定）
+//                                                    
+// ***************************************************
+// ***************************************************
+// ***************************************************
+// 
+
+
+// 
+// ページメイン部設定
+// ***********************************************
+// ***********************************************
+.mainContents {
+// .sideBar {
+
+  @include mquery("mb") { .dspPC { display: none; } }     //　NTAD 20220617
+  @include mquery("pc") { .dspMB { display: none; } }
+
+  #section-postsList {
+    @include style-sectionDef();
+  }
+
+  // **************************************************
+  // **************************************************
+
+
+  // 
+  // *************************************************
+  // *************************************************
+  // ■ 投稿概略リスト（アーカイブリストページ本体）表示セクション
+  // 1. 【 archiveListDspCtr.php】
+  // 2. 【categoryListDspCtr.php】にて利用されるセクション
+  // *************************************************
+  // *************************************************
+  #section-postsList {
+
+    // border: 2px dashed red;           // for DEBUG!
+
+    // 
+    // 投稿概要リスト・ページ本体部設定
+    // ***************************************
+    @include style-postInfoAtList( 10px );      // 10px;
+
+    // 
+    // ■ 背景画像rellax効果用設定
+    // **************************
+    .rlxParentElmBG { margin: 0; }
+    // 
+    // ■ PC画面表示用
+    // 当該セクション「背景画像の拡大率」を、
+    // 初期値から変更
+    .rlxImgFrameW {
+      width:  110%;
+      height: auto;                           // default：250%; 120%
+      @include style-rlxImgFrame( -10% );       // default：-80%; 0%
+                                 top: 0%;     // -30%;
+      @include mquery( "mb" )  { top: 50%; }   // -45%;
+      opacity: 0.5;         // for DEBUG
+    }
+    .rlxImgFrameH {
+      width:  130%;
+      height: auto;                           // default：250%; 120%
+      @include style-rlxImgFrame( -10% );       // default：-80%; 0%
+                                 top: 0%;     // -30%;
+      @include mquery( "mb" )  { top: 10%; }   // -45%;
+      opacity: 0.5;         // for DEBUG
+    }
+
+    // 
+    // *********************************************
+    // *********************************************
+    // カテゴリ一覧・アーカイブ一覧ページのみ適用書式
+    // *********************************************
+    .detailInfo {
+      width: 100%;
+      @include mquery( "pc" ) {
+        margin: 0 !important;
+        padding-top: 80px !important;
+
+        // 
+        // アニメーションイメージ画像「神宮スコアボード裏、太陽光燦燦と・・・」
+        .expImage {                   // ★★★★
+          @include style_ourPfmRellaxImage( 0, 0, 100%, 100%, 0% );
+        }
+
+      }
+      overflow: hidden;                // sticky効果ある？　20220914
+
+      // border: 2px solid red;           // for DEBUG!
+
+      // 
+      // ■ ページメイン部・投稿概略リスト部
+      // 
+      // .eachPostDigest ☛ archiveListDspCtr.php:60
+      // .eachPostDigest ☛ categoryListDspCtr.php:67
+      .eachPostDigest {
+        width: 78%; // 80%;
+        margin-right: 2%;
+
+        // border: 2px dashed lime;     // for DEBUG !!!!!
+
+        @include mquery( "mb" ) {
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+        // @include mquery( "pc" ) {
+        //   width: 80%;  
+        // }
+
+        // // 
+        // // セクション２には、ご挨拶・何が出来るの？２件の記事有り
+        // .infoArea:not(:first-child) {
+        //   margin-top: 30px;
+        // }
+
+        // .newsArea {
+        .infoArea {
+          width: 100%;
+        }
+      }
+    }
+    .uline {
+      margin: 10px 0;
+      margin-bottom: 50px;
+    }
+    // *********************************************
+    // *********************************************
+
+    // 
+    // *********************************************
+    // *********************************************
+    // ■ 投稿概要一覧リスト・ページ内、右側サイドバー設定
+    // *********************************************
+    .wpls-sideBar {
+      position: relative;   // sticky効果ある？
+
+      // border: 2px dashed red;
+
+      width: 20%;
+      // @include mquery( "pc" ) { height: 100vh; }
+      @include mquery( "pc" ) { height: auto; }
+      @include mquery( "mb" ) { width: 100%; }
+
+      // border-radius: 8px;
+      // border: 2px solid blue;
+
+      // 
+      // 投稿概要リストページ内、右サイドメニュー内ボタン配置設定【menuBtn】
+      .sideMenu {
+
+        position: sticky;
+        top: 0; // 画面の上から 0px の位置にきたら追従させる
+
+        // border: 2px dashed lime;
+
+                                  font-size: $articleCharSize;
+        @include mquery( "mb" ) { font-size: $articleCharSizeMB; }
+        font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+        line-height: 1.5em;
+        padding: 40px 10px 40px 10px !important;
+
+        @include mquery( "pc" ) {
+          padding: 40px 0;
+          width: 100%;
+          min-height: 850px;
+        }
+
+        // 
+        // 投稿時期別一覧外枠設定
+        .eraList {
+          height: auto;
+          max-height: 300px;
+          overflow: auto;
+          margin: 10px 0 40px 0; 
+          padding-left: 0;
+          border-radius: 10px;
+        }
+
+        // 
+        // カテゴリ種別選択ボタン設定
+        .catBtnList {
+          // height: auto;
+          // max-height: 300px;
+          margin: 20px 0 0 0;
+          // border: 1px dashed purple;
+        }
+        @include style-catMenuBtn();
+      }    
+    }
+  }
+
+  // 
+  // *************************************************
+  // *************************************************
+  // ■ アーカイブリスト表示用設定
+  // 【参考】「https://ateitexe.com/wordpress-accordion-archives/」
+  // 　１．「＋<span>」 年号（投稿件数）
+  // 　　(1) 月別（投稿件数）
+  // 　※　「＋<span>」クリックにて、月別データの表示／非表示を切り替える
+  // *************************************************
+  // *************************************************
+  ul.accordion {
+    // border: 2px dashed lime;
+    margin-left: 10px;
+  }
+  ul.accordion ul{ /* アコーディオン部 */
+    margin: 5px 0 30px 8px;        // left ☛ 15px;
+    // border: 1px dashed purple;
+  }
+  ul.accordion ul.hide{ /* アコーディオン非表示 */
+    display: none;
+  }
+  ul.accordion li{ /* リセット */
+    list-style: none;
+    background: none;
+    padding: 0;
+  }
+  ul.accordion li p{ /* リセット */
+    margin: 0;
+  }
+  ul.accordion li p span{ /* アイコン背景 */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    background: #09c;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: -2px;
+  }
+  ul.accordion li p span:hover { /* アイコン背景 */
+    cursor: pointer;
+  }
+  ul.accordion li p span:before{ /* アイコン横棒 */
+    content:'';
+    height: 1px;
+    width: 9px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+  }
+  ul.accordion li p span:after{ /* アイコン縦棒（閉じてるとき） */
+    content: '';
+    height: 9px;
+    width: 1px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 3px;
+    left: 7px;
+  }
+  ul.accordion li p span.acv_open:after{ /* アイコン縦棒なし（開いてるとき） */
+    height: 0;
+    width: 0;
+  }
+  ul.accordion ul li{ /* アーカイブリスト */
+    margin-left: 15px;
+    position: relative;
+  }
+  ul.accordion ul li::after{ /* アーカイブリストマーク 「＞」*/
+    display: block;
+    content: '';
+    position: absolute;
+    top: .2em;
+    top: .5em;
+    left: -1em;
+    // width: 6px;
+    // height: 6px;
+    width:  calc( $articleTitleCharSize / 2 );
+    height: calc( $articleTitleCharSize / 2 );
+    @include mquery( "mb" ) {
+      width:  calc( $articleTitleCharSizeMB / 2 );
+      height: calc( $articleTitleCharSizeMB / 2 );  
+    }
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .acv_open { color: red; }
+}

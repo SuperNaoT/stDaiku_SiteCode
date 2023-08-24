@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*************************************************
+  ■ サムネイル画像付き投稿タイル一件の枠等設定
+ *************************************************/
+.eachTileBorderStyle {
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: lemonchiffon;
+}
+
+/*************************************************
+  ■ サムネイル画像付き投稿タイル内、画像・タイトル表示位置設定
+ *************************************************/
+.eachTileInsideStyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*************************************************
+  ■ サムネイル画像付き投稿タイル内、画像表示・位置設定
+ *************************************************/
+.thumbPos {
+  margin-left: 15px;
+  border: dashed red 1px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*************************************************
+  ■ サムネイル画像付き投稿タイル内、画像・タイトル表示位置設定
+ *************************************************/
+.titlePos {
+  margin: auto;
+}
+/*# sourceMappingURL=postListWithThumb.css.map */

@@ -1,0 +1,949 @@
+@charset "utf-8";
+// 
+// 
+// ***********************************************
+// ***********************************************
+// 
+// ★ 各種スタイルセット定義
+// 
+// 【参考：https://www.asobou.co.jp/blog/web/sass-variable】
+// 
+// ***********************************************
+// ***********************************************
+
+// // メインナビゲーションメニュー・文字サイズ
+// $headerNavigationMenuFSize: 0.9vw;
+
+// 
+// **************************************************
+// **************************************************
+// 各セクション、共通設定部
+// **************************************************
+// **************************************************
+@mixin style-sectionDef {
+      
+  width: 100vw;
+  overflow: hidden;       // sticky効果ある？ 20220914
+
+  // border: 2px dashed lime;
+  
+  // 
+  // 各セクション共通パディング設定
+  @include mquery( "pc" ) { padding: $sectionPaddingWidth 0; }
+  @include mquery( "mb" ) { padding: 50px 0; }
+
+  // 
+  // 各セクション内、記事記載領域外枠範囲の設定
+  // **********************************
+  .infoArea {
+    position: relative;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+
+    // background-color: red;
+    margin: 0;
+
+    // for Pallax効果「rellax」
+    overflow: hidden;
+    // border: 2px dashed red;
+
+    // 
+    // 記事記載領域外枠タイトルの設定
+    .infoTitle { @include style-infoTitle( $informationTitleColor ); }
+
+    @include mquery( "mb" ) {
+      width: 90%;
+      margin: 0 auto;
+      // margin-bottom: 30px;  
+    }
+
+    ul {
+      margin: 15px 0 15px 30px;
+                                li { font-size: $articleULCharSize; line-height: 1.5em;}
+      @include mquery( "mb" ) { li { font-size: $articleULCharSizeMB; } }         // 14px
+    }
+
+  }
+
+  // 
+  // 横並びブロック設定
+  .sBysBlk {
+    @include style-sideBySide;
+  }
+
+  // 
+  // 各セクション内左ペイン、セクションイメージ画像・メニューボタン配置設定
+  .sideMenu {
+
+    // border: 2px solid red;      // for DEBUG!!!
+
+    @include mquery( "mb" ) {               width: 100%; margin: 0px auto; padding: 10px 0 20px 0; }   // height: 60vh;
+    @include mquery( "pc" ) { height: 55vh; width: 30%;  margin: 0   auto; padding: 0 10px; }                // height: 55vh;
+
+    // // 
+    // // メニューボタン設定
+    // .menuBtn {
+    //   @include style-menuBtn;
+    //   height: 80px;
+    //   margin: 50px auto;
+    //   @include mquery( "mb" ) { height: 90px; }
+    // }
+    // .menuBtn:hover {
+    //   transform: scale(1.02);
+    //   color: yellow;
+    //   @include mquery( "pc" ) {
+    //     color:rgba(102,90,26,1);
+    //     background-color: $btnHoverBgColor;
+    //   }
+    // }
+  }
+
+  // 
+  // 横並びブロック【sBysBlk】内部にて、
+  // 実際に横並びに成る記事ブロック、一つの設定
+  .blkInfo {
+    font-size: $articleCharSize;
+    @include mquery( "mb" ) { font-size: $articleCharSizeMB; }
+    font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+    line-height: 1.5em;
+    padding: 40px 10px 40px 10px;
+    background: linear-gradient(to right, rgba(0,255,255,0.3), rgba(0,255,255,0));
+    border-radius: 8px;      
+  }          
+}
+
+// 
+// アニメーション・サイト訪問者への、挨拶バナー
+// ★ ページ本体向け設定
+// _mainPage.scss
+// _ourSkills.scss
+// _homeNewBuild.scss
+// _homeReform.scss
+// _homeIns.scss
+// _stArcGallery.scss
+// _companyProfile.scss
+// _privacyPolcy.scss
+// _contactForm.scss
+@mixin style-greetingArea-wrapper {
+  position: relative;
+  @include style-greetingArea();
+  @include mquery( "mb" ) { display: none; }
+
+  // 
+  // ★ ここがミソ！
+  // containerから出し画面一杯に表示へ変更時、
+  // 基本スタイルを変更（値追加） 
+  width: 100%;
+  margin: 0;
+  margin-top: 5px;
+  border-radius: 0;
+}
+
+// 
+@mixin style-greetingArea {
+  margin: 0 auto;
+  @include mquery( "mb" ) { margin: 30px auto; }
+  margin-bottom: 20px;
+
+  background-color: #FEF9FA;
+  border: 1px solid blue;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .gradient {
+    .-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      will-change: transform;
+    }
+    .gra-out {
+      background: linear-gradient(90deg,rgba(102,90,26,  1) 3%,
+                                        rgba(102,90,26,0.3) 15%,
+                                        rgba(102,90,26,  0) 30% );
+      opacity: 1;
+    }
+    .gra-inner {
+      background: linear-gradient(270deg,rgba(102,90,26,  1) 3%,
+                                         rgba(102,90,26,0.3) 15%,
+                                         rgba(102,90,26,  0) 30% );
+      opacity: 1;
+    }
+  }
+
+  .news-banner {
+    display : block;
+    height  : 50px;      // 30px;
+    width   : 100%;
+    margin: 0 auto;
+  }
+
+  /* バナー内コンテンツ */
+  .news-banner__content {
+    display: inline-block;
+    font-size: 24px;
+    color: rgb(102,90,26);
+    color: #333;
+    line-height: 50px;         // 30px;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: animate-banner 20s linear infinite;
+    // animation: animate-banner 30s linear infinite;
+  }
+
+  /* バナー内の要素をすべて選択 */
+  .news-banner__content > * {
+    display: inline-block;
+  }
+
+  /* 横にスクロールさせるアニメーション */
+  @keyframes animate-banner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }  
+}
+
+// 
+// ***********************************************
+// スライドショー用スタイル定義
+// ***********************************************
+@mixin style-slideShow {
+  z-index: 0;
+  position: relative;
+  @include mquery( "mb" ) {
+    height: 48vh;                   // 50vh 45vh
+    height: 350px;
+    margin: 25px 10px 15px 10px;
+    margin: 0;
+  }
+  @include mquery( "pc" ) { 
+    // width:  100vw;    // 95% 画面一杯表示設定
+    // height: 600px;    // 650px; 80vh;
+
+    max-width:  100vw;    // 95% 画面一杯表示設定
+    max-height: 600px;    // 650px; 80vh;
+
+    width: 100%;
+  
+    margin: 0 auto;           // 画面一杯表示設定
+    margin-top: 0;          // 40px;
+    margin-bottom: 15px;
+  }
+  // object-fit: cover; 
+  // width: 100%;
+  // height: auto;
+  overflow:hidden;
+  // border-top-right-radius: 50% 40px;
+  // border-top-left-radius:  50% 40px;  
+  border-bottom-right-radius: 50% 40px;
+  border-bottom-left-radius:  50% 40px;
+  box-shadow: 6px 6px 12px rgba(85,121,155, 0.7);
+  .overlapArea {
+    position: absolute;
+    @include mquery( "mb" ) { top: 27vh; left: 3vw; }               // 22vh
+    // @include mquery( "pc" ) { top: 32vh; left: 3vw; }               // 5vh
+    @include mquery( "pc" ) { top: 55vh; left: 3vw; }               // 5vh
+    p {
+      @include mquery( "mb" ) { font-size: 4vw; }
+      @include mquery( "pc" ) { font-size: 1.9vw; }
+      font-weight: bold;
+      line-height: 1.5em;
+      color: #fff;
+      color: blue;
+      padding: 15px 15px;
+      border: 1px solid blue;
+      border-radius: 8px;
+      background-color: rgba(102,90,26, 0.6);
+      background-color: rgba(127,255,212, 0.8);
+    }
+  }
+  
+  // 
+  // FlexSliderユーティリティのキャプション表示設定
+  .flex-caption {
+    padding: 3px 10px;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+// 
+// ***********************************************
+// クリックタイトル用定義
+// ***********************************************
+@mixin style-fontAwsClickHand( $fontColor: red, $fontSize: 14px ) {
+  color:     $fontColor;
+  font-size: $fontSize;
+}
+
+// 
+// ***********************************************
+// 各セクション内インフォ―メーションタイトル用定義
+// ***********************************************
+@mixin style-infoTitle( $fontColor: #333 ) {
+  font-size: 20px;              // 20px
+  @include mquery( "mb" ) { font-size: 16px; }
+  font-weight: bold;
+  font-family:"HGPSoeiKakupoptai";
+  font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+  text-align: center;
+  line-height: 40px;            // 40px
+  @include mquery( "mb" ) { line-height: 25px; padding: 5px 0;}
+  color: blue;
+  color: $fontColor;
+  background-color: rgba(255,222,173,1);
+  border: 1px solid #333;           // NTad 2px
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+// 
+// ***********************************************
+// 各セクション内インフォ―メーションタイトル用定義
+// ***********************************************
+
+// 
+// ナビメニュー配下「サブメニュー」用定義
+// 下記「style-navMenuBar」にて利用
+//  
+@mixin subMenu {
+  opacity: 0;
+  position: absolute;
+  top: 80px;
+  padding: 10px 20px;
+  box-shadow: 6px 6px 12px rgb(198, 198, 198);
+  border-radius: 3px;
+  z-index: 0;
+  background-color: rgb(246, 246, 246);
+  transition-duration: 0.8s;    // 1s
+  font-size: 0.8em;             // SUB Menu's size
+  font-weight: bold;
+  line-height: 2em;
+  ul {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+@mixin style-navMenuBar {
+  
+  color: white;
+  // background-color: rgba(127,255,212,0.5);
+  background-color: rgba(85,121,155,1);
+  padding: 12px 0 7px 0;
+  // 
+  // ナビゲーションメニュー
+  nav {
+    width: 100%;
+    max-width: $areaMaxWidth;
+
+    // border: 2px solid blueviolet;
+
+    .mainNav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      // li:not( :first-child ) { margin-left: 4px; padding-left: 4px;}
+      li:not( :first-child ) { margin-left: 1px; padding-left: 1px;}
+      li {
+        // width: calc($areaMaxWidth/8);
+        // font-size: 15px;
+        font-size: $headerNavigationMenuFSize;
+
+        font-weight: 700;
+        // padding: 0 5px 0 10px;
+        // padding-left: 30px;
+      }
+      li:not(:first-child) {
+        // border-left: solid 1px #a0522d;
+        border-left: solid 1px white;
+      }
+
+      li > a:hover {
+        transition: 500ms;
+        color: $btnHoverBgColor;    // yellow;
+      }
+      // border: 2px solid blue;
+
+    }
+  }  
+
+  // ナビメニュー上部「サブメニュー消去用エリア」
+  // #subMnuErase {
+  //   position: fixed;
+  //   top: 0;
+  //   height: 48px;
+  //   // border: 1px solid lime;
+  // }
+  // .cmtSubMenu    { @include subMenu; }
+  // .refSubMenu    { @include subMenu; }
+
+  // 
+  // モバイル表示時は、メインメニューは非表示
+  @include mquery( "mb" )  { display: none; }
+}
+
+
+@mixin style-fixedNavMenuBar {
+  
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
+
+  color: white;
+  background-color: rgba(85,121,155,1);
+  padding: 12px 0 7px 0;
+
+  // 
+  // ナビゲーションメニュー
+  nav {
+    width: 100%;
+    max-width: $areaMaxWidth;
+
+    // border: 2px solid blueviolet;
+
+    .mainNav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li:not( :first-child ) { margin-left: 1px; padding-left: 1px;}
+      li {
+        // font-size: 15px;
+        font-size: $headerNavigationMenuFSize;        // 0.9vw;
+        font-weight: 700;
+      }
+      li:not(:first-child) {
+        border-left: solid 1px white;
+      }
+
+      li > a:hover {
+        transition: 500ms;
+        color: $btnHoverBgColor;    // yellow;
+      }
+    }
+  }  
+
+  // 
+  // モバイル表示時は、メインメニューは非表示
+  @include mquery( "mb" )  { display: none; }
+}
+
+
+// 
+// ***********************************************
+// ナビゲーションメニュー下部、アニメーションライン定義
+// ***********************************************
+@mixin style-navUnderLine( $specifiedColor: #333, $specifiedID: "#navigation", $targetTAG: "a" ) {
+  #{$specifiedID} #{$targetTAG} {
+    display: inline-block;
+    line-height: 1.5em;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  #{$specifiedID} #{$targetTAG}:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    // background-color: #333;
+    background-color: $specifiedColor;
+    transform: translate(-100%, 0);
+    transition: transform 500ms;
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+    content: "";
+  }
+  #{$specifiedID} #{$targetTAG}:hover:after {
+    transform: translate(0, 0);
+  }
+}
+
+// 
+// ***********************************************
+// ***********************************************
+// 
+// ★   スタイルセット定義部
+// 
+// ***********************************************
+// トップページ「セクション」共通書式
+// ***********************************************
+@mixin style-sideBySide {
+  @include mquery( "mb" ) { display: block; }
+  @include mquery( "pc" ) { display: flex;  }
+}
+
+@mixin style-defaultBtn {
+  // background-color: #FEF9FA;
+  // background-color: yellow;
+
+  color: white;
+  // background-color: rgba(85,121,155,0.8);
+  background-color: $btnBgColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid blue;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+// 
+// ***********************************************
+// トップページ・投稿関連ページサイドバー内、「カテゴリ選択ボタン」書式
+// ***********************************************
+@mixin style-catMenuBtn(  $specifiedBtnWidth: 100% ) {
+  // mixinDefine:style-menuBtn の内容の差替え
+  .menuBtn {
+    height: 50px;
+  
+    // ***************************
+    // style-menuBtn からコピー
+    width: $specifiedBtnWidth;                             // 100%;
+    padding: 5px 5px;
+    border: 2px solid rgba(102,90,26, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+  
+    color: white;
+    background-color: $btnBgColor;
+  
+    transition: 500ms;
+    // ***************************
+  }
+  .menuBtn:first-child {
+    margin: 0 0 5px 5px;
+  }
+  .menuBtn:not(:first-child) {
+    margin: 5px;
+    margin-left: 5px;
+  }
+
+  .menuBtn:hover {
+
+    color:rgba(102,90,26,1);
+
+    @include mquery( "mb" ) {
+      color: yellow;
+      transform: scale(1.02);
+    }
+    @include mquery( "pc" ) {
+      color: #333;
+      background-color: $btnHoverBgColor;
+    }
+  }
+
+
+  .btnInner {      
+    // ***************************
+    // style-menuBtn からコピー
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 1px solid rgba(102,90,26, 1);
+    // border: 2px dashed red;
+    border-radius: 8px;
+    overflow: hidden;
+    // ***************************
+
+    .mnBtnIcon {
+      width: 35% !important;
+
+      // ***************************
+      // style-menuBtn からコピー
+      height: 95%;
+      padding: 5px 5px;
+      border-radius: 8px;
+      object-fit: cover; 
+      overflow: hidden;
+      // ***************************
+    }
+    p {
+      width: 65%;
+                                font-size: calc( $articleCharSize - 4px ) ;
+      @include mquery( "mb" ) { font-size: calc( $articleCharSizeMB ); }
+      font-weight: bold;
+      text-align: center;
+    }
+  }  
+}
+
+// 
+// 未使用❣
+// 未使用❣
+// 未使用❣
+// 未使用❣
+// 未使用❣
+// 未使用❣
+// 未使用❣
+// 未使用❣
+// 未使用❣
+// 未使用❣
+@mixin style-menuBtn {  // 未使用❣       
+  
+  width: 100%;
+  // height: 100px !important;
+
+  // margin: 5px auto;      // 10px
+  padding: 5px 5px;
+  border: 2px solid rgba(102,90,26, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+
+  color: white;
+  background-color: $btnBgColor;
+
+  transition: 500ms;
+
+  .btnInner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 1px solid rgba(102,90,26, 1);
+    // border: 2px dashed red;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .mnBtnIcon {
+      width: 45%;
+      height: 95%;
+      padding: 5px 5px;
+      border-radius: 8px;
+      object-fit: cover; 
+      overflow: hidden;
+    }
+    p {
+      width: 55%;
+      @include mquery( "mb" ) { font-size: 4vw;   }
+      @include mquery( "pc" ) { font-size: 1.1vw; }       // 1.2vw
+      // @include mquery( "mb" ) { font-size: 4vw;   line-height: 12.5vh; }
+      // @include mquery( "pc" ) { font-size: 1.2vw; line-height: 14.5vh; }
+      font-weight: bold;
+      
+      text-align: center;
+    }
+  }
+}
+
+
+
+// 
+// サブページ群、ページタイトル表示設定
+@mixin style-pageTitle {
+  display: flex;
+  align-items: center;
+  font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+
+  @include mquery( "mb" )  {
+    margin-left: 8vw;
+    font-size:  calc( 1vw*5 );  // 24px
+    font-size: $animateTitleCharSizeMB;  // 24px
+  }
+  @include mquery( "pc" )  {
+    margin-left: 10vw;
+    font-size: 3vw;   // 36px  1vw*2.5
+    font-size: $animateTitleCharSize;  // 24px
+    font-weight: bold;
+  }
+
+  line-height: 2em;
+  // margin-top: 30px;          // 180px;
+  // margin-bottom: 20px;  
+  margin: 30px 0;
+  color: #665A1A;
+  opacity: 0;
+
+  // ハイフン
+  .hrzLine {
+    height: 2px;
+
+    @include mquery( "mb" ) {
+      width : 20px;
+      margin: 0 20px 0 0;  
+    }
+    @include mquery( "pc" ) {
+      width : 1.5vw;    // 30px
+      margin-right: 2vw;  
+    }
+
+    background-color: #333;
+    background-color: #665A1A;
+
+    position: relative;
+    left: 10px;      
+  }
+}
+
+// 
+// ***********************************************
+// トップページ企業理念セクション・企業理念ページ内「鶴ヶ城櫻・表示位置」書式
+// ***********************************************
+@mixin style-imageDispPos( $imageURL:"../../../../Images/slideShow/myouhou_1.JPG", $imgHeight:65%, $pcPosT:16vh, $pcPosR:16vw ) {
+
+  @include mquery( "mb" )  {
+    width:  90%;
+    margin-left: 5%;
+  }
+  @include mquery( "pc" )  {
+    width: 48%;
+  }
+
+  content: "";
+  height: $imgHeight;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  transform: translateX( 50% );
+  overflow: hidden;
+  opacity: 0;
+
+  // 
+  // 親要素に対しての位置を設定出来る様にする・・・
+  position: absolute;
+  @include mquery( "mb" )  {
+    top:  $pcPosT;    // 10%;
+    right: 5vw;
+    background-image: linear-gradient(90deg,  rgba(255, 255, 255, 0.7 ) 0%,
+                                              rgba(255, 255, 255, 0.6 ) 45%,
+                                              rgba(255, 255, 255, 0.5 ) 70%,
+                                              rgba(255, 255, 255, 0.4 ) 95%,
+                                              rgba(255, 255, 255, 0.0 ) 100% ),
+                      linear-gradient(180deg, rgba(255, 255, 255, 0.7 ) 0%,
+                                              rgba(255, 255, 255, 0.6 ) 25%,
+                                              rgba(255, 255, 255, 0.5 ) 50%,
+                                              rgba(255, 255, 255, 0.4 ) 75%,
+                                              rgba(255, 255, 255, 0.0 ) 100% ),
+                      url( $imageURL );
+  }
+
+  @include mquery( "pc" )  {
+    top:   $pcPosT;    // 10%;
+    right: $pcPosR;      //5%;
+    background-image: linear-gradient(90deg,  rgba(255, 255, 255,   1 ) 0%,
+                                              rgba(255, 255, 255, 0.5 ) 40%,
+                                              rgba(255, 255, 255,   0 ) 70%,
+                                              rgba(255, 255, 255,   0 ) 100% ),
+                      linear-gradient(180deg, rgba(255, 255, 255, 1 ) 0%,
+                                              rgba(255, 255, 255, 0 ) 20%,
+                                              rgba(255, 255, 255, 0 ) 80%,
+                                              rgba(255, 255, 255, 0 ) 100% ),
+                      url( $imageURL );
+  } 
+  background-size:     cover;
+  background-position: center;
+  background-repeat:   no-repeat;
+}
+
+// 
+// ***********************************************
+// ■ 投稿概要一覧リスト表示中、投稿概要１件の書式設定
+// 1.【dspPostInfoAtList.php】の書式設定
+// ***********************************************
+@mixin style-postInfoAtList( $thumbLeftPos: 10px ) {
+    
+  // Ⅰ：新着情報ブロック定義 
+  .blkInfo {
+    // border: 2px dashed blueviolet !important;       // for DEBUG!
+    @include mquery( "mb" ) { padding: 20px 10px 20px 10px !important; }
+  }      
+
+  // Ⅱ：【.blkInfo】クラスと同列に定義
+  .newsBlk {
+    margin: 10px auto;
+    @include mquery( "pc" ) {
+      padding: 10px;
+      position: relative;
+      width: 100%;   // 80%;
+      margin:  15px auto;
+      padding: 15px;
+    }
+    // border: 1px dashed red;
+    @include mquery( "mb" ) { padding: 20px; }
+    // border-top:    1px solid lime;
+    // border-left:   1px solid lime;
+    // border-bottom: 1px solid lime;
+    border-right:  none;
+    box-shadow: -5px 5px 5px rgba(117,106,48,0.7);
+  }
+
+  // 
+  // サムネイル画像、親要素内表示調整
+  .myThumbParentStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit:cover;
+  }
+  .myThumbChildStylePC {
+    width:  100px;
+    height: 100px;
+  }
+  .myThumbChildStyleMB {
+    width:  60px;
+    height: 60px;
+  }
+
+
+  /* 新着情報・サムネイル画像表示設定 */
+  .newsThumb {
+    // padding: 3px;
+                              width: 100px; height: 100px; margin-left: $thumbLeftPos;
+    @include mquery( "mb" ) { width:  60px; height:  60px; margin-left: 10px; padding: 0; }
+
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .newsNoImage {
+    width:  100px;
+    height: 100px;  
+    @include mquery( "mb" ) {
+      width:  60px;
+      height: 60px;  
+    }
+    background-image: linear-gradient(90deg,  rgba(255, 255, 255, 0.5 ) 0%,
+                                              rgba(255, 255, 255, 0.4 ) 45%,
+                                              rgba(255, 255, 255, 0.3 ) 70%,
+                                              rgba(255, 255, 255, 0.2 ) 95%,
+                                              rgba(255, 255, 255, 0.1 ) 100% ),
+                      linear-gradient(180deg, rgba(255, 255, 255, 0.5 ) 0%,
+                                              rgba(255, 255, 255, 0.4 ) 25%,
+                                              rgba(255, 255, 255, 0.3 ) 50%,
+                                              rgba(255, 255, 255, 0.2 ) 75%,
+                                              rgba(255, 255, 255, 0.1 ) 100% ),
+                                          url( "../../../../../saitohCon/Images/TAKUMI/newsNoImage.png" );
+    background-size:     cover;
+    background-position: center;
+    background-repeat:   no-repeat;
+  }
+
+  /* 新着情報・記載日付表示設定 */
+  .newsDate {
+    @include mquery( "pc" ) {
+      position:absolute;
+      left: 18%;
+      width:20%;  
+      padding-top: 20px;
+      font-size: $pageExpCharSizePC;
+      text-align: center;
+    }
+
+    @include mquery( "mb" ) {
+      width: 80%;
+      padding-top: 10px;
+      padding-left: 20px;
+      margin:  0;
+      font-size: $pageExpCharSizeMB;
+      font-weight: bold;
+      // border: 1px solid red;
+    }
+
+    color: #333;
+    font-weight: bold;
+    // border: 1px dashed red;
+    /* border-radius: 10px; */
+  }
+  .newsSet {
+    display: block;
+    @include mquery( "pc" ) {
+      position: absolute;
+      // left: 35%;
+      left: 38%;
+      padding-left: 20px;
+    }
+  }
+  .newsTitle {
+    margin: 10px 10px 10px 0;
+    font-size: $articleTitleCharSize;
+    @include mquery( "mb" ) { 
+      font-size: $articleCharSizeMB;
+      width: 100%;
+      margin-left:   10px;
+      margin-bottom:    0;
+    }
+    font-weight: bold;
+    // border: 1px solid purple;
+  }
+  .newsContext {
+    padding: 0 30px 0 0;
+    @include mquery( "mb" ) { display: none; padding: 10px 20px 0 0; }
+  }
+
+  .thumbDateForMB {
+    display: flex;
+    padding-left: 20px;
+  }
+
+}
+
+// 
+// ***********************************************
+// ■ 投稿一覧リスト画面、「pallax効果」背景画像に関する設定
+// 1.【categoryListDspCtr.php】の書式設定
+// 2.【_ArcCatDigestPage.scss】からの呼出し
+// ***********************************************
+@mixin style_ourPfmRellaxImage( $topPos: 200px, $leftPos: 25%, $baseWidth: 35%, $baseHeight: 300px, $imageTopRate: -250% ) {
+
+  // 
+  // style-sectionにて「relative」設定
+  position: absolute;
+
+  top:    $topPos  !important;
+  left:   $leftPos !important;
+  width:  $baseWidth;                        // ***************************
+  height: $baseHeight;
+  
+  border-radius: 15px;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.5); // 0.35
+  overflow:hidden;
+
+  opacity: 0.5;
+  z-index: -2;
+
+  // for DEBUG!
+  // border: 4px dashed red;
+  // overflow:visible;
+
+  .baseFrame {
+    position: relative;
+    top:  0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    // for DEBUG!
+    // border: 2px dashed lime;
+    // background-color: lime;
+    // overflow:visible;
+
+    img {
+      position: absolute;
+      width:  120%;                // 150%;
+      height: 120%;                // 150%;
+      top:    $imageTopRate;       // -80% -220px;
+      left:     0%;                // -25%;
+      
+      /* これにより、親のエレメント高さ・幅に合わせ表示出来る */
+      object-fit: cover;
+    }
+  }
+}

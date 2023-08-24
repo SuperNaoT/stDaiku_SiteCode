@@ -1,0 +1,128 @@
+@charset 'utf-8';
+
+// ***********************************************
+// 　アイキャッチを中央寄せにする
+// ***********************************************
+.eye-catch-wrap{
+  text-align: center;
+}
+
+// 
+// ***********************************************
+// ***********************************************
+// ■ 投稿概要一覧リスト下部、ページネーション表示関連設定
+// ***********************************************
+// ***********************************************
+.nextPrevArea {
+  margin: 20px auto;
+  margin-bottom: 60px;
+  .post-link {
+    @include mquery( "pc" ) { position: relative; }
+    font-family: "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+    font-size: $articleTitleCharSize;
+    width: auto;
+    height: 100px;
+    @include mquery( "mb" ) {
+      width: 95%;
+      font-size: $articleTitleCharSizeMB;
+    }
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px 15px 10px 15px;
+    @include mquery( "mb" ) { padding: 10px 3px; }
+    border-top: none;
+    border-left: none;
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px rgb(198, 198, 198);
+    // border: 1px solid red;      // for DEBUG !!!!!        
+  }
+}
+
+// ***********************************************
+// 　各カテゴリー一覧リストページ・ページネーション用設定
+// ***********************************************
+.pagination {
+  width: auto;
+  margin: 0;
+  @include mquery( "mb" ) { margin-top: 20px; }
+  // border: 2px dashed red;
+}
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  // justify-content: space-between;
+  // border: 1px solid lime;
+  margin: 0;
+}
+.pagination li {
+  margin: 0 5px;
+}
+// ページネーション番号ボタン
+.page-numbers {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+	background-color: rgb(111,150,223, 0.7);
+  color: #333;
+}
+.page-numbers:hover {
+  color:white;
+  background-color: rgb(111,150,223, 1);
+  font-weight: 700;
+}
+// ページネーション番号「前へ」ボタン
+.page-numbers.prev:hover {
+  // background-color: #fcc;
+  content: "前";
+}
+// ページネーション番号「次へ」ボタン
+.page-numbers.next:hover {
+  // background-color: #fcc;
+  content: "次";
+}
+// ページネーション番号「現在位置」ボタン
+.page-numbers.current {
+  background-color: #fcc;
+}
+.page-numbers.current:hover {
+  cursor: not-allowed;
+  color: #333;
+  background-color: #fcc;
+}
+// 縮小「・・・」ボタン
+// .dots:hover {
+.dots {
+  cursor: not-allowed;
+  color: #333;
+  background-color: rgba( 220, 220, 220, 0.7 );
+}
+.dots:hover {
+  cursor: not-allowed;
+  color: #333;
+  background-color: rgba( 220, 220, 220, 1 );
+}
+// 下部、現在ページ位置・分数表示
+.pagination-total {
+  // 
+  // 親要素は「post-link」
+
+  @include mquery( "pc" ) {
+    position: absolute;
+    bottom: 5px;
+    left: 43%;  
+  }
+  @include mquery( "mb" ) { margin-top: 10px; }
+  text-align: center;
+  
+  // border: 1px solid #333;
+  // border-radius: 5px;
+  padding: 0;
+  width: 100px;
+  margin: 0 auto;
+  // margin-bottom: 10px;
+}
+

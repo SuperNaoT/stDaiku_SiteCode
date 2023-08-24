@@ -1,0 +1,58 @@
+@charset "utf-8";
+// 
+// 
+// ***********************************************
+// ***********************************************
+// 
+// ★ 各種スタイルセット定義
+// 
+// 【参考：https://www.asobou.co.jp/blog/web/sass-variable】
+// 
+// ***********************************************
+// ***********************************************
+// 
+@mixin style-selectArrow {
+
+  .m-form-select {
+      position: relative;
+  }
+  .m-form-select:before {
+      content: "";
+      position: absolute;
+      top: 1.8vh;
+      bottom: 0;
+      margin: auto;
+      
+      // 位置決め
+      left: 50vw;           // 34vw;
+
+      @include mquery( "mb" ) {
+      // 位置決め
+        top: 2.5vh;
+        left: 78vw;            // 72vw;
+      }
+
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid rgb(102,90,26);
+      border-right: 2px solid rgb(102,90,26);
+      transform: rotate(135deg);
+      pointer-events: none;
+      color: rgb(102,90,26);
+  }
+  .m-form-select select {
+      // height: 2.4em;
+      // width: 100%;
+      padding: 0 8px;
+      border-radius: 4px;
+      border: none;
+      box-shadow: 0 0 0 1px #ccc inset;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      cursor: pointer;
+  }
+  .m-form-select select::-ms-expand {
+      display: none;
+  }
+}

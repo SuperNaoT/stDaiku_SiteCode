@@ -106,7 +106,8 @@ if ( ! is_admin() ) {
            is_page("privacypolicy" ) ||
            is_page("contactform"   ) ||
            is_single ()              ||
-           is_archive()                 )  {
+           is_archive()              ||
+           is_404()                     )  {
 
         // jQueryの読み込み
         // ハンドル名（識別要の文字列）.
@@ -147,6 +148,18 @@ if ( ! is_admin() ) {
           $src = get_template_directory_uri().'/Js/contactForm/subPageArticlesDspCtr.js';
           // 特定のCSSの後で読み込ませたい場合はそのハンドル名（指定がなければ空の array() でも可）.
           $deps = array( "autoKana_js" );
+          // Scriptの取込み実行
+          wp_enqueue_script( $handle, $src, $deps, $ver );
+
+        } else if ( is_404() ) {
+
+          // GreenSock用Scriptの読み込み
+          // ハンドル名（識別要の文字列）.
+          $handle = '404GSAPExec_js';
+          // 追加したいサブページ利用GSAPアニメーションスクリプトのURL.
+          $src = get_template_directory_uri().'/Js/404/404PageGSAPDspCtr.min.js';
+          // 特定のCSSの後で読み込ませたい場合はそのハンドル名（指定がなければ空の array() でも可）.
+          $deps = array( "gsap_js" );
           // Scriptの取込み実行
           wp_enqueue_script( $handle, $src, $deps, $ver );
 

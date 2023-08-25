@@ -6,19 +6,15 @@
   border: 1px solid #333;
   border-radius: 5px;
   margin-top: 5px;
-  background-color: lemonchiffon;
+  background-color: rgb(255, 250, 205);
 }
 
 /*************************************************
   ■ サムネイル画像付き投稿タイル内、画像・タイトル表示位置設定
  *************************************************/
 .eachTileInsideStyle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 /*************************************************
@@ -36,5 +32,4 @@
  *************************************************/
 .titlePos {
   margin: auto;
-}
-/*# sourceMappingURL=postListWithThumb.css.map */
+}/*# sourceMappingURL=postListWithThumb.css.map */

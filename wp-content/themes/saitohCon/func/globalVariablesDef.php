@@ -69,6 +69,7 @@
   global $DEF_pageCompanyProfile_msg;
   global $DEF_pagePrivacyPolicy_msg;
   global $DEF_pageArcGallery_msg;
+  global $DEF_pageNotFound404_msg;
 
   $DEF_frontPage_msg          = '★【<span>齋藤建築</span>】の「<span class="spBlue">ホームページ</span>」へようこそ！　<span class="spBlue">木造住宅・新築/設計</span>は勿論の事、<span class="spBlue">耐震診断</span>・<span class="spBlue">耐震工事</span>・<span class="spBlue">建物診断</span> ☛ からの<span class="spBlue">リフォーム</span>迄、何でもお任せ下さい！　補助金に付いてもご相談下さい。　「<span>お家に関する専門店</span>」です・・・（<span class="spBlue">建築会社</span>・<span class="spBlue">一級建築士設計事務所</span>）';
   $DEF_pageOurSkills_msg      = '★ 齋藤建築【<span>お約束できる技術力</span>】　<span class="spBlue">木造住宅耐震診断士</span>／<span class="spBlue">住宅診断士</span>（<span>ホームインスペクター</span>）としての確かな技術力に基き、お住まいに成る皆さまにお喜び頂けるご提案を申し上げます・・・';
@@ -79,6 +80,7 @@
   $DEF_pageCompanyProfile_msg = '★ 齋藤建築【<span>会社のご案内</span>】　耐震診断・耐震工事・建物診断 ☛ からのリフォーム等の事業内容始め、会社に関するご案内です・・・';
   $DEF_pagePrivacyPolicy_msg  = '★ 齋藤建築【<span>個人情報保護</span>】　社会的使命を十分に認識し、本人の権利の保護、個人情報に関する法規制等を遵守致します・・・';
   $DEF_pageContactForm_msg    = '★ 齋藤建築【<span>お問い合わせ</span>】　<span class="spBlue">木造住宅・新築/設計</span>は勿論の事、<span class="spBlue">耐震診断</span>・<span class="spBlue">耐震工事</span>・<span class="spBlue">建物診断</span> ☛ からの<span class="spBlue">リフォーム</span>迄、何でもお任せ下さい！　「<span>お家に関する専門店</span>」、お問い合わせお待ちして居ります・・・';
+  $DEF_pageNotFound404_msg    = '★ 齋藤建築【<span>お詫び</span>】<span class="spBlue">お探しのページは見つかりませんでした</span>・・・';
 
   // 
   // 各種メニュー遷移先ページ「スラッグ：ＩＤ」

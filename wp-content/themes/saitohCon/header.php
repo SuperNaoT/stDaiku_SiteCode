@@ -317,6 +317,9 @@
       case 9:
         $greetingMessage = $DEF_pageContactForm_msg;
         break;
+      case 404:
+        $greetingMessage = $DEF_pageNotFound404_msg;
+        break;
       default:
         $greetingMessage = $DEF_frontPage_msg;
     }

@@ -60,7 +60,7 @@
       // 「投稿ページ（single）」
       // 「投稿ページ（archive）」
       // } else if ( is_archive() )  {
-      if ( is_single() || is_archive() )  {
+      if ( is_single() || is_archive() || is_search() )  {
 
         // ハンドル名（識別要の文字列）.トップページ表示、個別定義用
         $handle = 'archive_css';
@@ -251,20 +251,6 @@
         // CSSファイル取込実行
         wp_enqueue_style( $handle, $src, $deps, $ver, $media );
 
-        // // 
-        // // 「投稿ページ（archive）」
-        // if ( is_archive() )  {
-          
-        //   // ハンドル名（識別要の文字列）.トップページ表示、個別定義用
-        //   $handle = 'archive_css';
-        //   // 特定のCSSの後で読み込ませたい場合はそのハンドル名（指定がなければ空の array() でも可）.
-        //   $deps = array();
-        //   // 追加したいCSSのURL.
-        //   $src = get_template_directory_uri().'/assets/scss/contents/archive/style.min.css';
-        //   // CSSファイル取込実行
-        //   wp_enqueue_style( $handle, $src, $deps, $ver, $media );
-
-        // }
       }
     }
 

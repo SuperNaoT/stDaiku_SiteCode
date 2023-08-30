@@ -32,7 +32,7 @@
             $posts = get_posts("numberposts=$GB_countOfPosts&category_name=$GB_categoryType&orderby=post_date&offset=0");
             foreach ($posts as $post):
               //
-              // 取得投稿データの、グローバル変数への設定。
+              // 「WordPress」取得投稿データの、グローバル変数への設定。
               setup_postdata($post);
         ?>
         

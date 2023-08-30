@@ -439,7 +439,7 @@
 	// *******************************************************
 	// *******************************************************
   add_action( 'get_header', function() {
-    echo "<br>　！アクションフックが動作しました【get_header】<br><br>";
+    // echo "<br>　！アクションフックが動作しました【get_header】<br><br>";
   } );
 	
 	// 
@@ -447,16 +447,16 @@
 	//   「指定文字列」をエコーバックするアクションフック
 	// 
   add_action( 'get_footer', function() {
-		echo "<br>　■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■<br>";
-										global $template;		 // テンプレートファイルのパスを取得
-		$temp_name = basename( $template );  // パスの最後の名前（ファイル名）を取得
-		if ( $temp_name == 'page-ntadsidebar.php' )  {
-			echo "　！アクションフックが動作しました【get_footer( 'footer-nTAD.php ' )】<br>";
-		} else  {
-			echo "　！アクションフックが動作しました【get_footer】<br>";
-		}
-		// echo '　現在使用しているテンプレートファイル：'.$temp_name .'<br>'; // ファイル名の表示
-		echo "　■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■<br><br>";
+		// echo "<br>　■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■<br>";
+		// 								global $template;		 // テンプレートファイルのパスを取得
+		// $temp_name = basename( $template );  // パスの最後の名前（ファイル名）を取得
+		// if ( $temp_name == 'page-ntadsidebar.php' )  {
+		// 	echo "　！アクションフックが動作しました【get_footer( 'footer-nTAD.php ' )】<br>";
+		// } else  {
+		// 	echo "　！アクションフックが動作しました【get_footer】<br>";
+		// }
+		// // echo '　現在使用しているテンプレートファイル：'.$temp_name .'<br>'; // ファイル名の表示
+		// echo "　■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■<br><br>";
   } );
 	
 	// 

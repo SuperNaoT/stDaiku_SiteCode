@@ -71,6 +71,7 @@ if ( ! is_admin() ) {
       if ( is_home()                 ||
            is_archive()              ||
            is_category()             ||
+           is_search()               ||
            is_page( "homeinspect"  ) ||
            is_page( "homenewbuild" ) ||
            is_page( "homereform"   )    )  {
@@ -107,6 +108,7 @@ if ( ! is_admin() ) {
            is_page("contactform"   ) ||
            is_single ()              ||
            is_archive()              ||
+           is_search()               ||
            is_404()                     )  {
 
         // jQueryの読み込み
@@ -252,7 +254,7 @@ if ( ! is_admin() ) {
           // Scriptの取込み実行
           wp_enqueue_script( $handle, $src, $deps, $ver );
         
-        } else if ( is_archive() || is_single() )  {
+        } else if ( is_archive() || is_single() || is_search() )  {
 
           // アーカイブページ内アーカイブリスト表示処理Scriptの読み込み
           // ハンドル名（識別要の文字列）.

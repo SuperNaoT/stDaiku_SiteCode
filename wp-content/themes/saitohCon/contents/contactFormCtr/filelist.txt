@@ -1,0 +1,14 @@
+ ドライブ D のボリューム ラベルは G-Drive_2TB です
+ ボリューム シリアル番号は 9C73-01AC です
+
+ D:\Documents\★（株）和Plus\04)_【ndda】_IT-WEB-Solution事業関連\00)_Projects\01) 齋藤建築\★HP\★st-daikuDev\wordpress\wp-content\themes\saitohCon\contents\contactFormCtr のディレクトリ
+
+2023/08/28  17:53    <DIR>          .
+2023/08/28  17:53    <DIR>          ..
+2023/08/28  17:53                 0 filelist.txt
+2023/05/23  12:40             9,735 inputDataConf.php
+2023/05/23  12:40             9,988 inputDataEdit.php
+2023/05/23  12:40             7,117 inputDataSend.php
+2023/05/23  12:40               924 sendAddress.txt
+               5 個のファイル              27,764 バイト
+               2 個のディレクトリ  1,562,424,557,568 バイトの空き領域

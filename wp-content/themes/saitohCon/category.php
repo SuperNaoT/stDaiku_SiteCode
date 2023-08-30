@@ -59,19 +59,6 @@ Template Name: 投稿リスト表示ページ用基本テンプレート
     // $GB_countOfPosts = 3;
   }
 
-  // if ( $categoryInfo->cat_name == $GB_catName_news )  {
-  //   $GB_blogListTitle = "　■ 新着ニュース　";
-  //   $GB_menuPos       = 10;
-  // } else if ( $categoryInfo->cat_name == $GB_catName_blog )  {
-  //   $GB_blogListTitle = "　■ ブログ日記　";
-  //   $GB_menuPos      = 11;
-  //   // $GB_countOfPosts = 5;
-  // } else if ( $categoryInfo->cat_name == 'howto' )  {
-  //   $GB_blogListTitle = "　■ 使い方　";
-  //   $GB_menuPos      = 12;
-  //   // $GB_countOfPosts = 3;
-  // }
-
   // ヘッダー部の取込み
   get_header();
 ?>
@@ -89,8 +76,7 @@ Template Name: 投稿リスト表示ページ用基本テンプレート
   <div class="mainContents">
     <!-- <p>
       <br><br>
-      　個別投稿記事表示ページ【archive.php】<br>
-      　投稿ＩＤは・・・　　　【<?php // echo get_query_var('p'); ?>】
+      　個別投稿記事表示ページ【category.php】<br>
       <br><br>
     </p> -->
 

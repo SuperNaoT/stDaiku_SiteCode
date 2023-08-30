@@ -23,6 +23,9 @@
     <!-- ************************************ -->
     <!-- ************************************ -->
     <div class="sideMenu">
+
+    <?php if ( $GB_menuPos != 405 ): ?>
+
       <h4 style="margin-bottom: 0;">　■ 投稿時期別一覧　</h4>
       <div class="eraList" id="js-eraList">
         <!--  -->
@@ -173,6 +176,8 @@
         </ul>          
       </div>
 
+    <?php endif; ?>
+
       <h4 style="margin-bottom: 0;">　■ カテゴリー種別　</h4>
       <div class="catBtnList" id="js-catBtnList">
         <!-- 新着ニュース記事が存在すれば、ボタンを表示 -->
@@ -239,6 +244,16 @@
           <a href="<?php echo esc_url( get_category_link( $GB_catID_howTo ) ) ?>">.</a>
         <?php endif; ?>        
       </div>      <!-- catBtnList  -->
+
+      <h4 style="margin-bottom: 0; margin-top: 20px;">　■ 記事検索　</h4>
+      <div class="searchFunc">
+        <form method="get" class="searchform" action="<?php echo esc_url( home_url('/') ); ?>">
+          <input type="text" placeholder="キーワード検索!!" name="s" class="searchfield" value="" />
+          <input type="submit" value="" alt="検索" title="検索" class="searchsubmit">
+        </form>
+
+        <!-- <?php get_search_form(); ?> -->
+      </div>
     </div>
 
     <!-- ************************************ -->

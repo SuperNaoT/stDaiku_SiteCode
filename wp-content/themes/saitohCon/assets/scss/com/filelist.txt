@@ -1,0 +1,19 @@
+ ドライブ D のボリューム ラベルは G-Drive_2TB です
+ ボリューム シリアル番号は 9C73-01AC です
+
+ D:\Documents\★（株）和Plus\04)_【ndda】_IT-WEB-Solution事業関連\00)_Projects\01) 齋藤建築\★HP\★st-daikuDev\wordpress\wp-content\themes\saitohCon\assets\scss\com のディレクトリ
+
+2023/05/23  12:40               389 _breakpoints.scss
+2023/05/23  12:40             8,243 _defaultStyle.scss
+2023/05/23  12:40             4,104 _footerStyle.scss
+2023/05/23  12:40             4,882 _forDEBUG.scss
+2023/05/23  12:40            11,460 _headerStyle.scss
+2023/05/23  12:40             8,843 _mainUtility.scss
+2023/05/23  12:40            26,480 _mixinDefine.scss
+2023/05/23  12:40             1,380 _mixinForContactForm.scss
+2023/05/23  12:39            10,119 _rellax.scss
+2023/05/23  12:39               773 _sideScrollStyle.scss
+2023/05/23  12:39             4,214 _subPageStyle.scss
+2023/05/23  12:39             4,096 _valuablesDefine.scss
+              12 個のファイル              84,983 バイト
+               0 個のディレクトリ  1,561,540,190,208 バイトの空き領域

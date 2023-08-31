@@ -103,6 +103,7 @@
         <input type="submit" value="" alt="検索" title="検索" class="searchsubmit">
       </form>
     </div> -->
+    <?php get_search_form(); ?>
 
   </div>
 </aside>

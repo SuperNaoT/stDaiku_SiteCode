@@ -244,16 +244,16 @@
           <a href="<?php echo esc_url( get_category_link( $GB_catID_howTo ) ) ?>">.</a>
         <?php endif; ?>        
       </div>      <!-- catBtnList  -->
-
-      <h4 style="margin-bottom: 0; margin-top: 20px;">　■ 記事検索　</h4>
+<!-- 
+      <h4 class="searchTitle">　■ 記事検索　</h4>
       <div class="searchFunc">
-        <form method="get" class="searchform" action="<?php echo esc_url( home_url('/') ); ?>">
+        <form method="get" class="searchform" action="<?php //echo esc_url( home_url('/') ); ?>">
           <input type="text" placeholder="キーワード検索!!" name="s" class="searchfield" value="" />
           <input type="submit" value="" alt="検索" title="検索" class="searchsubmit">
         </form>
-
-        <!-- <?php get_search_form(); ?> -->
       </div>
+ -->
+      <?php get_search_form(); ?>
     </div>
 
     <!-- ************************************ -->
